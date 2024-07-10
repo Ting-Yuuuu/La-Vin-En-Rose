@@ -1,0 +1,145 @@
+/* -----------------頁首選單區--------------------------------- */
+/* -----------------選單選項-------------------------------- */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #D3E4CD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+}
+
+header ul {
+    display: flex;
+    display: block;
+}
+
+
+header img {
+    width: 300px;
+    flex-shrink: 0;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.items {
+    display: flex;
+    gap: 68px;
+    position: relative;
+}
+
+.items li {
+    height: 100px;
+}
+
+
+.items a {
+    text-decoration: none;
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.items a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+/* ---------------------子選單-------------------- */
+.items li>ol {
+    position: absolute;
+    display: block;
+    background-color: #d3e4cdb3;
+    display: none;
+}
+
+.items li>ol li {
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #649255;
+}
+
+.items li>ol a {
+    line-height: 60px;
+}
+
+
+.items li:nth-child(2):hover ol {
+    display: block;
+}
+
+
+/* ----------------------搜尋 會員登入---------------------------- */
+
+.icon {
+    display: flex;
+    margin-right: 20px;
+}
+
+.icon li {}
+
+.icon a {}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+/* --------------頁尾------------------- */
+footer {
+    width: 100%;
+    height: 280px;
+    background-color: #D3E4CD;
+}
+
+.bottom {
+    width: 792px;
+    height: 210px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+.bottom ul {
+    display: flex;
+    width: 570px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.bottom li {}
+
+.bottom a {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+.bottom img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.bottom p {
+    font-family: "Noto Sans TC";
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 1.5;
+}

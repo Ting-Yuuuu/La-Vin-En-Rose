@@ -1,0 +1,598 @@
+@import url(css/reset.css);
+
+
+body {
+    font-family: "Carattere", "Noto Sans TC";
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -----------------頁首選單區--------------------------------- */
+/* -----------------選單選項-------------------------------- */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #D3E4CD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+}
+
+header ul {
+    display: flex;
+    display: block;
+}
+
+
+header img {
+    width: 300px;
+    flex-shrink: 0;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.items {
+    display: flex;
+    gap: 68px;
+    position: relative;
+}
+
+.items li {
+    height: 100px;
+}
+
+
+.items a {
+    text-decoration: none;
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.items a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+/* ---------------------子選單-------------------- */
+.items li>ol {
+    position: absolute;
+    display: block;
+    background-color: #d3e4cdb3;
+    display: none;
+}
+
+.items li>ol li {
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #649255;
+}
+
+.items li>ol a {
+    line-height: 60px;
+}
+
+
+.items li:nth-child(2):hover ol {
+    display: block;
+}
+
+
+/* ----------------------搜尋 會員登入---------------------------- */
+
+.icon {
+    display: flex;
+    margin-right: 20px;
+}
+
+.icon li {}
+
+.icon a {}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+/* ---------------永生花說明和花束租借--------------- */
+.top {
+    background-image: url(../image/introduce\ bg.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+/* ----------永生花說明----------------- */
+.introduce {
+    display: flex;
+}
+
+/* ------------左邊圖片和slogan--------------- */
+.photo {
+    margin-left: 80px;
+}
+
+.photo img {
+    margin-top: 72px;
+}
+
+
+/* ----------右邊永生花說明文字----------------- */
+.explain {
+    margin-left: 82px;
+    height: 588px;
+}
+
+.explain h1 {
+    color: #464646;
+    font-size: 96px;
+    margin-top: 72px;
+}
+
+.explain p {
+    color: #505050;
+    font-size: 20px;
+    line-height: 48px;
+    margin-top: 20px;
+}
+
+.explain h2 {
+    color: #FE9C39;
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+/* ---------花束租借---------------------- */
+.bouquet {
+    display: flex;
+    height: 548px;
+}
+
+/* ----------左邊花束租借文字說明------------ */
+.lease {
+    margin-left: 88px;
+    padding: 10px;
+    
+}
+
+.lease .slogan {}
+
+.lease .slogan h3{
+    color: #FE9C39;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.lease ul {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #FE9C39;
+}
+
+.lease li{
+    overflow: hidden;
+}
+
+.lease li:nth-child(2){
+    margin-top: 20px;
+}
+
+
+.lease  li .pic-one{
+    width: 28px;
+    float: left;
+}
+
+.lease  li .pic-two {
+    width: 28px;
+}
+
+.lease li h4 {
+    color: #FE9C39;
+    font-family: "Noto Sans TC";
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0 4px;
+    float:left;
+}
+
+.lease li p {
+    color: #505050;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    line-height: 40px; 
+}
+
+/* ------------右邊租借花束圖片-------------- */
+.picture {}
+
+.picture img {
+    height: 500px;
+    margin-left: 36px;
+    margin-top: 36px;
+}
+
+/* ----------熱門排行--------------- */
+
+.ranking {
+    height: 588px;
+    background-color: #FCF7EC;
+    padding-top: 20px;
+    font-size: 0;
+}
+
+/* ---------標題------------ */
+.ranking h2 {
+    color: #FE9C39;
+    font-family: "Noto Sans TC";
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+    width: 164px;
+    height: 30px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #FE9C39;
+    margin-left: 64px;
+}
+
+.ranking img {
+    width: 24px;
+}
+
+/* ---------數字圖片和文字------------ */
+.ranking .item1 {
+    display: flex;
+    position: relative;
+    width: 380px;
+    float: left;
+    margin: 30px auto 0 28px;
+}
+
+.ranking .item1 .number {
+    color: #FFDBA9;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFC172;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 210px;
+    font-weight: 600;
+    width: 160px;
+}
+
+.ranking .text {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+.ranking .text a {
+    text-decoration: none;
+}
+
+
+.ranking .text .pic {
+    width: 282px;
+    height: 282px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.ranking .text img {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+.ranking .text img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.ranking .text h3 {
+    color: #313131;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.ranking .text h3:hover {
+    color: #649255;
+    font-weight: 600;
+}
+
+.ranking .text p {
+    color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+
+.ranking .text p:hover {
+    color: #649255;
+    font-weight: 700;
+}
+
+/* --------------商品區------------------ */
+main {
+    background-image: url(../image/product\ bg.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 48px;
+}
+
+/* -----------花束標題---------------- */
+.title {}
+
+.title ul {
+    width: 1188px;
+    color: #649255;
+    font-family: Carattere;
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.title li {}
+
+.title li:nth-child(2) {
+    text-align: right;
+}
+
+.title a {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.title a:hover {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+/* ----------花束商品列------------- */
+.preserved {
+    font-size: 0;
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.preserved ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1188px;
+    justify-content: space-between;
+}
+
+.preserved li {}
+
+.preserved a {
+    text-decoration: none;
+}
+
+.preserved .pic {
+    width: 282px;
+    height: 282px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.preserved img {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+.preserved img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+
+.preserved h3 {
+    color: #313131;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.preserved h3:hover {
+    color: #649255;
+    font-weight: 600;
+}
+
+.preserved p {
+    color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+
+.preserved p:hover {
+    color: #649255;
+    font-weight: 700;
+}
+
+
+/* -----------盆花標題--------------- */
+.title-pot {}
+
+.title-pot ul {
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.title-pot li {
+    color: #649255;
+    font-size: 70px;
+    text-align: right;
+}
+
+.title-pot a {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.title-pot a:hover {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title-pot img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+/* ------------盆花商品列-------------- */
+.pottedflowers {
+    font-size: 0;
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.pottedflowers ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1188px;
+    justify-content: space-between;
+}
+
+.pottedflowers li {}
+
+.pottedflowers a {
+    text-decoration: none;
+}
+
+.pottedflowers .pic {
+    width: 282px;
+    height: 282px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.pottedflowers img {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+.pottedflowers img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.pottedflowers h3 {
+    color: #313131;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.pottedflowers h3:hover {
+    color: #649255;
+    font-weight: 600;
+}
+
+.pottedflowers p {
+    color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+
+.pottedflowers p:hover {
+    color: #649255;
+    font-weight: 700;
+}
+
+/* --------------頁尾------------------- */
+footer {
+    width: 100%;
+    height: 280px;
+    background-color: #D3E4CD;
+}
+
+.bottom {
+    width: 792px;
+    height: 210px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+.bottom ul {
+    display: flex;
+    width: 570px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.bottom li {}
+
+.bottom a {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+.bottom img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.bottom p {
+    font-family: "Noto Sans TC";
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 1.5;
+}

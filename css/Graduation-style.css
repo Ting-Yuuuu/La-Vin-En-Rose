@@ -1,0 +1,538 @@
+@import url(reset.css);
+
+
+body {
+    font-family: "Carattere", "Noto Sans TC";
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -----------------頁首選單區--------------------------------- */
+/* -----------------選單選項-------------------------------- */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #D3E4CD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+header ul {
+    display: flex;
+    display: block;
+}
+
+
+header img {
+    width: 300px;
+    flex-shrink: 0;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.items {
+    display: flex;
+    gap: 68px;
+}
+
+.items li {}
+
+
+.items a {
+    text-decoration: none;
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.items a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+/* ---------------------子選單-------------------- */
+.items li > ol{
+    position: absolute;
+    display: block;
+    background-color: #d3e4cdb3;
+    display: none;
+}
+
+.items li > ol li{
+   width: 160px;
+   height: 60px;
+   text-align: center;
+   line-height: 60px;
+   border-bottom: 1px solid #649255;
+}
+
+.items li > ol a{
+    line-height: 60px;
+}
+
+
+.items li:nth-child(2):hover ol{
+    display: block;
+}
+
+/* ----------------------搜尋 會員登入---------------------------- */
+
+.icon {
+    display: flex;
+    margin-right: 20px;
+}
+
+.icon li {}
+
+.icon a {}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+/* ---------------首圖大圖區------------------------ */
+
+.top {
+    height: 700px;
+    background-color: #FCF7EC;
+    font-size: 0;
+    position: relative;
+}
+
+.top img {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.top h1 {
+    color: #313131;
+    text-shadow: 4px 4px 4px rgba(128, 128, 128, 0.20);
+    font-size: 52px;
+    height: 476px;
+    height: 180px;
+    position: absolute;
+    top: 420px;
+    left: 80px;
+}
+
+/* ---------------中間文字圖片和色塊---------------------- */
+.middle {
+    background-image: url(../image/graduation\ \ middle\ bg.png);
+    height: 700px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+/* -------------左側圖片、色塊------------------------ */
+.left {
+    float: left;
+    margin-right: 48px;
+    margin-left: 48px;
+    margin-top: 36px;
+}
+
+.left img {}
+
+.left ul {
+    display: flex;
+    width: 572px;
+    height: 92px;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.left li {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+
+}
+
+.left li:first-child {
+    background-color: #E7F3FF;
+}
+
+.left li:nth-child(2) {
+    background-color: #BCD8FD;
+}
+
+.left li:nth-child(3) {
+    background-color: #DBDBDB;
+}
+
+.left li:nth-child(4) {
+    background-color: #C0C0C0;
+}
+
+.left li:last-child {
+    background-color: #5A5858;
+}
+
+/* -------------右側文字圖片和色塊------------------ */
+.right {
+    margin-bottom: 32px;
+}
+
+/* -------------右側文字----------------- */
+.text {
+    margin-bottom: 12px;
+}
+
+.text h2 {
+    color: #505050;
+    font-size: 48px;
+}
+
+/* --------------右側文字、色塊------------------- */
+.block {
+    display: flex;
+}
+
+.block img {}
+
+.block ul {
+    display: flex;
+    flex-direction: column;
+    height: 516px;
+    width: 124px;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 24px;
+}
+
+.block li {
+    width: 124px;
+    height: 88px;
+    border-radius: 20px;
+}
+
+.block li:first-child {
+    background-color: #F3E9D6;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
+}
+
+.block li:nth-child(2) {
+    background-color: #FFDFC1;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
+}
+
+.block li:nth-child(3) {
+    background-color: #FFCA86;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
+}
+
+.block li:nth-child(4) {
+    background-color: #CFD5CB;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
+}
+
+.block li:last-child {
+    background-color: #CCC3AE;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15)
+}
+
+/* -----------------下方商品區--------------------- */
+main {
+    height: 1058px;
+}
+
+/* -----------------鮮花------------------------- */
+.fresh {
+    margin: 0 auto;
+}
+
+/* ------------------麵包屑---------------------- */
+
+.fresh .bread {
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.bread a {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.bread a:hover {
+    font-weight: 600;
+}
+
+
+.fresh>.bread img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+/* --------------鮮花/永生標題----------------------- */
+.fresh {}
+
+.fresh .title {
+    border-bottom: 2px solid #649255;
+    display: flex;
+    width: 1188px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+.fresh .title li {
+    color: #649255;
+    font-family: "Noto Sans TC";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+    flex-grow: 1;
+}
+
+.fresh .title a {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-weight: 400;
+    float: right;
+    text-decoration: none;
+}
+
+.fresh .title a:hover {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fresh .title img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+
+/* --------------商品列--------------- */
+.fresh ul {
+    width: 1188px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    font-size: 0;
+}
+
+.fresh li {}
+
+.fresh a {
+    text-decoration: none;
+}
+
+.fresh .pic {
+    width: 282px;
+    height: 282px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.fresh img {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+.fresh img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.fresh h3 {
+    color: #313131;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.fresh h3:hover {
+    color: #649255;
+    font-weight: 600;
+}
+
+.fresh p {
+    color: #606060;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+.fresh p:hover {
+    color: #649255;
+    font-weight: 700;
+}
+
+/* --------------永生/乾燥花---------------- */
+.dry {}
+
+/* -------------永生/乾燥標題--------------- */
+.dry .title {
+    border-bottom: 2px solid #649255;
+    display: flex;
+    width: 1188px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+.dry .title li {
+    color: #649255;
+    font-family: "Noto Sans TC";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+    flex-grow: 1;
+}
+
+.dry li a {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-weight: 400;
+    float: right;
+    text-decoration: none;
+}
+
+.dry .title a:hover {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dry .title img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+/* -------------商品列-------------------- */
+
+.dry ul {
+    width: 1188px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    font-size: 0;
+}
+
+.dry li {}
+
+.dry a {
+    text-decoration: none;
+}
+
+.dry .pic {
+    width: 282px;
+    height: 282px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.dry img {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+.dry img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.dry h4 {
+    color: #313131;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.dry h4:hover {
+    color: #649255;
+    font-weight: 600;
+}
+
+.dry p {
+    color: #606060;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 132px;
+}
+
+.dry p:hover {
+    color: #649255;
+    font-weight: 700;
+}
+
+/* --------------頁尾------------------- */
+footer {
+    width: 100%;
+    height: 280px;
+    background-color: #D3E4CD;
+}
+
+.bottom {
+    width: 792px;
+    height: 210px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+.bottom ul {
+    display: flex;
+    width: 570px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.bottom li {}
+
+.bottom a {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+.bottom img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.bottom p {
+    font-family: "Noto Sans TC";
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 1.5;
+}

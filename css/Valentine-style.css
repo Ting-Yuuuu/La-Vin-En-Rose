@@ -1,0 +1,432 @@
+@import url(./reset.css);
+
+
+body {
+    font-family: "Carattere", "Noto Sans TC";
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -----------------頁首選單區--------------------------------- */
+/* -----------------選單選項-------------------------------- */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #D3E4CD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+}
+
+header ul {
+    display: flex;
+}
+
+
+header img {
+    width: 300px;
+    flex-shrink: 0;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.items {
+    display: flex;
+    gap: 68px;
+}
+
+.items li {}
+
+
+.items a {
+    text-decoration: none;
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.items a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+/* ---------------------子選單-------------------- */
+.items li > ol{
+    position: absolute;
+    display: block;
+    background-color: #d3e4cdb3;
+    display: none;
+}
+
+.items li > ol li{
+   width: 160px;
+   height: 60px;
+   text-align: center;
+   line-height: 60px;
+   border-bottom: 1px solid #649255;
+}
+
+.items li > ol a{
+    line-height: 60px;
+}
+
+
+.items li:nth-child(2):hover ol{
+    display: block;
+}
+
+/* ----------------------搜尋 會員登入---------------------------- */
+
+.icon {
+    display: flex;
+    margin-right: 20px;
+}
+
+.icon li {}
+
+.icon a {}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+/* --------------首圖區塊----------------------- */
+
+.top {
+    display: flex;
+    font-size: 0;
+    padding-top: 100px;
+}
+
+.top img{
+    /* width: 100%;
+    background-size: cover; */
+}
+
+/* ----------中間banner區------------------- */
+.banner{}
+
+.banner img{
+    /* background-size: cover; */
+}
+
+/* --------------中間拱型區-------------- */
+
+.middle {
+    background-image: url(../image/Valentine\ middle\ bg.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+/* -----左邊------- */
+.left {
+    position: relative;
+}
+
+.left h2 {
+    color: #649255;
+    font-size: 32px;
+    font-weight: 400;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -84px;
+    top: 408px;
+}
+
+.left img {
+    margin-top: 88px;
+    margin-left: 82px;
+}
+
+.left .ball {
+    position: absolute;
+    bottom: 0;
+    left: 426px;
+    right: 0;
+    margin: auto;
+}
+
+/* ------右邊------ */
+.right {
+    margin-left: 50px;
+}
+
+.right img {
+    margin-top: 72px;
+}
+
+.right h2 {
+    color: #505050;
+    font-size: 36px;
+    margin-top: 44px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* -----------下方商品列表------------- */
+
+main {
+    background-image: url(../image/Valentine\ product\ bg.png);
+    height: 1640px;
+    background-size: cover;
+}
+
+/* ----------麵包屑------------- */
+
+.bread {
+    width: 1188px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.bread a {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.bread a:hover {
+    font-weight: 600;
+}
+
+
+.bread img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+/* --------------鮮花/永生標題----------------------- */
+.title {
+    width: 1188px;
+    margin: 0 auto;
+    border-bottom: 2px solid #649255;
+    margin-bottom: 30px;
+}
+
+.title ul {
+    display: flex;
+}
+
+.title li {
+    color: #649255;
+    font-family: "Noto Sans TC";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+    flex-grow: 1;
+}
+
+.title a {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    float: right;
+}
+
+.title a:hover {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+/* ---------商品列--------------- */
+/* ---------鮮花花束-------------- */
+.bouquet {
+    font-size: 0;
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.bouquet ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1188px;
+    justify-content: space-between;
+}
+
+.bouquet li {}
+
+.bouquet a {
+    text-decoration: none;
+}
+
+.bouquet .pic {
+    width: 282px;
+    height: 282px;
+    overflow:hidden;
+    border-radius: 20px;
+}
+
+.bouquet img {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    transform:scale(1,1);
+    transition: all 1s ease-out;
+}
+
+.bouquet img:hover{
+    transform:scale(1.2,1.2);
+}
+
+.bouquet h3 {
+    color: #313131;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.bouquet h3:hover {
+    color: #649255;
+    font-weight: 600;
+}
+
+.bouquet p {
+    color: #606060;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+
+.bouquet p:hover {
+    color: #649255;
+    font-weight: 700;
+}
+
+/* -----------永生花商品列表------------ */
+.dry {
+    width: 1188px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.dry ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1188px;
+    justify-content: space-between;
+}
+
+.dry li {}
+
+.dry a {
+    text-decoration: none;
+}
+
+.dry .pic {
+    width: 282px;
+    height: 282px;
+    overflow:hidden;
+    border-radius: 20px;
+}
+
+.dry img {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    transform:scale(1,1);
+    transition: all 1s ease-out;
+}
+
+.dry img:hover{
+    transform:scale(1.2,1.2);
+}
+
+.dry h3 {
+    color: #313131;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.dry h3:hover {
+    color: #649255;
+    font-weight: 600;
+}
+
+.dry p {
+    color: #606060;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.dry p:hover {
+    color: #649255;
+    font-weight: 700;
+}
+
+/* --------------頁尾------------------- */
+footer {
+    width: 100%;
+    height: 280px;
+    background-color: #D3E4CD;
+}
+
+.bottom {
+    width: 792px;
+    height: 210px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+.bottom ul {
+    display: flex;
+    width: 570px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.bottom li {}
+
+.bottom a {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+.bottom img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.bottom p {
+    font-family: "Noto Sans TC";
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 1.5;
+}
