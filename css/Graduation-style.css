@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 header ul {
@@ -118,8 +120,8 @@ header img {
     height: 476px;
     height: 180px;
     position: absolute;
-    top: 420px;
-    left: 80px;
+    bottom: 120px;
+    left: 60px;
 }
 
 /* ---------------中間文字圖片和色塊---------------------- */

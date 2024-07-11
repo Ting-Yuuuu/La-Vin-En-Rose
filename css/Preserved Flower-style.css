@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 header ul {
@@ -107,7 +109,7 @@ header img {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 /* ----------永生花說明----------------- */

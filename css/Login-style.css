@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 header ul {
@@ -162,7 +164,7 @@ main{
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
 }
 
-.text :focus{
+.text:focus-visible{
     border: 2px solid #D3E4CD;
 }
 

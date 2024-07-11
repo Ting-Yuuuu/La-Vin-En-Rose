@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 header ul {
@@ -104,7 +106,7 @@ header img {
 /* -------------首圖區塊--------------- */
 .banner {
     display: flex;
-    padding-top: 100px;
+    margin-top: 100px;
     font-size: 0;
 }
 
@@ -294,6 +296,7 @@ main {
     background-image: url(../image/freshflower\ product\ bg.png);
     background-repeat: no-repeat;
     padding-top: 48px;
+    background-size: cover;
 }
 
 /* -----------花束標題---------------- */

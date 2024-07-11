@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 header ul {
@@ -117,7 +119,7 @@ header img {
     font-family: Carattere;
     font-size: 56px;
     position: absolute;
-    left: 840px;
+    right: 60px;
     top: 150px;
 }
 
@@ -131,8 +133,8 @@ header img {
     font-family: Carattere;
     font-size: 64px;
     position: absolute;
-    top: 820px;
-    left: 60px;
+    bottom: 60px;
+    left: 70px;
 }
 
 /* --------------情人節專區------------------------- */

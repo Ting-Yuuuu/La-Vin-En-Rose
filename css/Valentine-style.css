@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 header ul {
@@ -54,27 +56,27 @@ header img {
 }
 
 /* ---------------------子選單-------------------- */
-.items li > ol{
+.items li>ol {
     position: absolute;
     display: block;
     background-color: #d3e4cdb3;
     display: none;
 }
 
-.items li > ol li{
-   width: 160px;
-   height: 60px;
-   text-align: center;
-   line-height: 60px;
-   border-bottom: 1px solid #649255;
+.items li>ol li {
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #649255;
 }
 
-.items li > ol a{
+.items li>ol a {
     line-height: 60px;
 }
 
 
-.items li:nth-child(2):hover ol{
+.items li:nth-child(2):hover ol {
     display: block;
 }
 
@@ -100,19 +102,21 @@ header img {
 .top {
     display: flex;
     font-size: 0;
-    padding-top: 100px;
+    margin-top: 100px;
+
 }
 
-.top img{
-    /* width: 100%;
-    background-size: cover; */
+.side-img img {
+    width: 36.3vw;
+
 }
 
 /* ----------中間banner區------------------- */
-.banner{}
+.banner {}
 
-.banner img{
-    /* background-size: cover; */
+.banner img {
+    width: 26vw;
+
 }
 
 /* --------------中間拱型區-------------- */
@@ -120,6 +124,7 @@ header img {
 .middle {
     background-image: url(../image/Valentine\ middle\ bg.png);
     height: 600px;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -271,7 +276,7 @@ main {
 .bouquet .pic {
     width: 282px;
     height: 282px;
-    overflow:hidden;
+    overflow: hidden;
     border-radius: 20px;
 }
 
@@ -279,12 +284,12 @@ main {
     width: 282px;
     height: 282px;
     border-radius: 20px;
-    transform:scale(1,1);
+    transform: scale(1, 1);
     transition: all 1s ease-out;
 }
 
-.bouquet img:hover{
-    transform:scale(1.2,1.2);
+.bouquet img:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .bouquet h3 {
@@ -302,7 +307,7 @@ main {
 
 .bouquet p {
     color: #606060;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin-top: 24px;
@@ -337,7 +342,7 @@ main {
 .dry .pic {
     width: 282px;
     height: 282px;
-    overflow:hidden;
+    overflow: hidden;
     border-radius: 20px;
 }
 
@@ -345,12 +350,12 @@ main {
     width: 282px;
     height: 282px;
     border-radius: 20px;
-    transform:scale(1,1);
+    transform: scale(1, 1);
     transition: all 1s ease-out;
 }
 
-.dry img:hover{
-    transform:scale(1.2,1.2);
+.dry img:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .dry h3 {
@@ -368,7 +373,7 @@ main {
 
 .dry p {
     color: #606060;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin-top: 24px;
