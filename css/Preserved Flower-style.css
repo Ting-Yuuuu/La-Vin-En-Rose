@@ -124,6 +124,17 @@ header img {
 
 .photo img {
     margin-top: 72px;
+    transition: all 1s ;
+    animation: card 1s ease-out forwards;
+}
+
+@keyframes card{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
 }
 
 
@@ -226,6 +237,8 @@ header img {
     margin-top: 36px;
 }
 
+
+
 /* ----------熱門排行--------------- */
 
 .ranking {
@@ -249,6 +262,7 @@ header img {
     align-items: center;
     border-bottom: 3px solid #FE9C39;
     margin-left: 64px;
+    user-select: none;
 }
 
 .ranking img {
@@ -272,6 +286,7 @@ header img {
     font-size: 210px;
     font-weight: 600;
     width: 160px;
+    user-select: none;
 }
 
 .ranking .text {

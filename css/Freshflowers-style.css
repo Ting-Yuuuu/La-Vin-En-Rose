@@ -147,6 +147,7 @@ header img {
     align-items: center;
     border-bottom: 3px solid #FE9C39;
     margin-left: 64px;
+    user-select: none;
 }
 
 .ranking img {
@@ -170,6 +171,7 @@ header img {
     font-size: 210px;
     font-weight: 600;
     width: 160px;
+    user-select: none;
 }
 
 .ranking .text {
@@ -190,7 +192,7 @@ header img {
     border-radius: 20px;
 }
 
-.ranking .text img {
+.ranking .mainpic {
     width: 282px;
     height: 282px;
     border-radius: 20px;
