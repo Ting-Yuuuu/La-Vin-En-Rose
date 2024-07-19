@@ -320,10 +320,10 @@ header img {
 }
 
 .ranking .text h3 {
-    color: #313131;
+    color: #505050;
     font-family: "Noto Sans TC";
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 12px;
 }
 
@@ -335,8 +335,8 @@ header img {
 .ranking .text p {
     color: #606060;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 24px;
     margin-bottom: 42px;
 }
@@ -435,10 +435,10 @@ main {
 
 
 .preserved h3 {
-    color: #313131;
+    color: #505050;
     font-family: "Noto Sans TC";
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 12px;
 }
 
@@ -450,8 +450,8 @@ main {
 .preserved p {
     color: #606060;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 24px;
     margin-bottom: 42px;
 }
@@ -536,10 +536,10 @@ main {
 }
 
 .pottedflowers h3 {
-    color: #313131;
+    color: #505050;
     font-family: "Noto Sans TC";
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 12px;
 }
 
@@ -551,8 +551,8 @@ main {
 .pottedflowers p {
     color: #606060;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 24px;
     margin-bottom: 42px;
 }

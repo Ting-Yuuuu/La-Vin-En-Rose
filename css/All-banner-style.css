@@ -100,40 +100,134 @@ header img {
 }
 
 /* ----------------首圖banner------------------- */
-.banner {
-    margin-top: 100px;
-    position: relative;
-    font-size: 0;
-}
-
-.banner a {}
-
-.banner img {
+.slider{
+    padding-top: 100px;
     width: 100%;
-    background-size: contain;
+    max-height: 600px;
+
+    /* overflow: hidden; */
 }
 
-.left {
-    position: absolute;
-    top: 380px;
-    left: 20px;
+.frame{
+    display: flex;
+    width: 4320px;
+    height: 600px;
 }
 
-.left a {}
-
-.left img {
-    width: 40px;
+.banner1{
+    background-image: url(../image/all-banner\ 1.png);
+    max-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.right {
-    position: absolute;
-    top: 380px;
-    right: 20px;
+.banner1 .banner-text{
+   padding-top: 190px;
+    margin-left: 130px;
 }
 
-.right img {
-    width: 40px;
+.banner1 .banner-text h1{
+    color:  #505050;
+    font-family:"Carattere" ;
+    font-size: 5vw;
+    margin-bottom: 10px;
 }
+
+.banner1 .banner-text h2{
+    color:  #505050;
+    font-family:"Zen Kurenaido";
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.banner1 .banner-text p{
+    color:  #505050;
+    font-family:"Zen Kurenaido";
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+.banner2{
+    background-image: url(../image/all\ banner\ 2.png);
+    max-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-text2{
+    width: 540px;
+    text-align: center;
+    padding-top: 160px;
+    margin-left: 100px;
+}
+
+.banner2 .banner-title{
+    display: flex;
+}
+
+.banner2 h1{
+    color: #881329;
+    font-family: "Carattere";
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+
+.banner2 img{}
+
+.banner2 h2{
+    color: #464646;
+    font-family:"Zen Kurenaido";
+    font-size: 3vw;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    
+}
+.banner2 p{
+    color: #464646;
+    font-family:"Zen Kurenaido";
+    font-size: 2vw;
+}
+
+.banner3{
+    background-image: url(../image/all-banner\ 3.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.banner3 img{
+    border-radius: 20px;
+    height: 400px;
+    padding-top: 100px;
+    margin-left: 100px;
+}
+
+.banner3-text{
+    width: 520px;
+    margin-top: 150px;
+    margin-left: 90px;
+}
+
+.banner3-text h1{
+    color: #505050;
+    font-family:"Zen Kurenaido";
+    font-size: 5vw;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner3-text p{
+    color: #505050;
+    font-family:"Zen Kurenaido";
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+
+
 
 
 /* -------------商品列表--------------------- */
@@ -244,7 +338,7 @@ main {
 
 .product p {
     color: #606060;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 24px;
