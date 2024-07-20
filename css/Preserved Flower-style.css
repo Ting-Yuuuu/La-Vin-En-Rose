@@ -242,8 +242,9 @@ header img {
     opacity: 0;
 }
 
-.slide img {
+.picture-slideshow .slide img {
     height: 500px;
+    position: absolute;
 }
 
 .slide:nth-child(1) {
