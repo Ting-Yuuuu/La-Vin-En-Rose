@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>所有商品</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/All-banner-style.css">
+    <link rel="stylesheet" href="css/All-swiper-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
-
 
 <body>
     <!----------------------------頁首選單------------------------------------------------------------->
@@ -46,30 +44,14 @@
     <!------------------------首圖banner---------------------------------------------->
     <div class="swiper"> <!-- swiper class 會被 new Swiper('.swiper' 使用 -->
         <div class="swiper-wrapper"> <!-- 讓Swiper知道要輪播的內容位置必須為 swiper-wrapper -->
-            <div class="swiper-slide1">
-                <div class="banner-text">
-                    <h1>Daily Flower Bouquet</h1>
-                    <h2>生活儀式感</h2>
-                    <p>用一束花，為平凡的日子，<br>
-                        增添一抹溫柔的色彩。</p>
-                </div>
+            <div class="swiper-slide">
+                <img src="image/all banner pic1.png" alt="">
             </div>
-            <div class="swiper-slide2">
-                <div class="banner-text2">
-                <div class="banner-title">
-                <h1>Chinese Valentine's Day</h1><img src="image/icon-bannerheart.svg" alt="">
-                </div>
-                <h2>七夕情人節花禮<br>
-                    現正預購中</h2>
-                <p>7 / 30前完成下單享8折優惠</p>
-                </div>
+            <div class="swiper-slide">
+                <img src="image/all-banner pic2.png" alt="">
             </div>
-            <div class="swiper-slide3">
-                <img src="image/all-banner3 pic.png" alt="">
-                <div class="banner3-text">
-                    <h1>仿真花束租借</h1>
-                    <p>讓您的特別時刻更加華麗和難忘！我們提供高品質的仿真花束租借服務，適合各種場合如生日聚餐、出遊拍照等，讓您活動中增添獨特的魅力和氛圍。留下令人難忘的美好回憶！</p>
-                </div>
+            <div class="swiper-slide">
+                <img src="image/all-banner pic3.png" alt="">
             </div>
         </div>
 
@@ -77,36 +59,20 @@
         <div class="swiper-button-next"></div>
     </div>
 
-    
-    <!-- <div class="slider">
-        <div class="frame">
-           <div class="banner1">
-                <div class="banner-text">
-                    <h1>Daily Flower Bouquet</h1>
-                    <h2>生活儀式感</h2>
-                    <p>用一束花，為平凡的日子，<br>
-                        增添一抹溫柔的色彩。</p>
-                </div>
-            </div>
-            <div class="banner2">
-                <div class="banner-text2">
-                <div class="banner-title">
-                <h1>Chinese Valentine's Day</h1><img src="image/icon-bannerheart.svg" alt="">
-                </div>
-                <h2>七夕情人節花禮<br>
-                    現正預購中</h2>
-                <p>7 / 30前完成下單享8折優惠</p>
-                </div>
-            </div>
-            <div class="banner3">
-                <img src="image/all-banner3 pic.png" alt="">
-                <div class="banner3-text">
-                    <h1>仿真花束租借</h1>
-                    <p>讓您的特別時刻更加華麗和難忘！我們提供高品質的仿真花束租借服務，適合各種場合如生日聚餐、出遊拍照等，讓您活動中增添獨特的魅力和氛圍。留下令人難忘的美好回憶！</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', { // 創建一個輪播
+            autoplay: { // 自動輪播 swiper
+                delay: 5 * 1000, // 每兩秒切換下一張
+            },
+            loop: true, // 輪播結束後回到第一張繼續輪播
+            navigation: { // 前一張、下一張按鈕
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
     <!-------------------商品列表---------------------------------------->
     <main>
 
