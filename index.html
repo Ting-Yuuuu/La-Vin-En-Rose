@@ -9,13 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!----------------------------頁首選單------------------------------------------------------------->
     <header>
         <a href="index.html"><img src="image/logo .png" alt="Logo" class="logo"></a>
         <ul class="items">
-            <li><a href="All-banner.html">所有商品</a></li>
+            <li><a href="All.html">所有商品</a></li>
             <li><a href="">主題分類</a>
                 <ol>
                     <li><a href="Valentine.html">情人節花禮</a></li>
@@ -40,10 +43,42 @@
         <h3>From bud to blossom,<br> 
             we bring nature's finest<br> 
             to brighten your day.</h3>
-        <img src="image/index-banner 1.png" alt="">
+
+        <div class="frame">
+            <div class="swiper"> <!-- swiper class 會被 new Swiper('.swiper' 使用 -->
+                <div class="swiper-wrapper"> <!-- 讓Swiper知道要輪播的內容位置必須為 swiper-wrapper -->
+                    <div class="swiper-slide">
+                        <img src="image/index-banner 1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/index-banner 2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/index-banner 3.png" alt="">
+                    </div>
+                </div>   
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>  
+
+        <script>
+            const swiper = new Swiper('.swiper', { // 創建一個輪播
+                autoplay: { // 自動輪播 swiper
+                    delay: 5 * 1000, 
+                },
+                pagination: { // 使用頁籤方法
+                el: ".swiper-pagination", // 找到class為swiper-pagination的標籤
+                dynamicBullets: true, // 是否使用動畫
+            },loop: true, // 輪播結束後回到第一張繼續輪播
+            });
+        </script>
+        <!-------------------------------------->
+
         <h2>Blossom into<br> 
             happiness with us.</h2>
     </div>
+
+
     
     <!----------------情人節專區--------------------------->
     <div class="valentine">
@@ -70,7 +105,7 @@
     <div class="bottom">
         <a href="index.html"><img src="image/logo .png" alt=""></a>
         <ul>
-            <li><a href="All-banner.html">所有商品</a></li>
+            <li><a href="All.html">所有商品</a></li>
             <li><a href="index.html">主題分類</a></li>
             <li><a href="Freshflowers.html">鮮花</a></li>
             <li><a href="Preserved Flower.html">永生花</a></li>

@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     top: 0;
     left: 0;
 }
@@ -113,6 +113,41 @@ header img {
     padding-top: 200px;
 }
 
+.frame{
+    border: 3px solid #FCF7EC;
+    width: 680px;
+    margin: 0 auto;
+    padding-top: 16px;
+    border-radius: 50% 50% 20px 20px ;
+}
+
+
+.swiper {
+    border-radius: 50% 50% 20px 20px ;
+    width: 650px;
+}
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img{
+    background-size: contain;
+    width: 650px;
+    border-radius: 50% 50% 20px 20px ;
+}
+
+.swiper-pagination-bullet-active{
+    background: #fff;
+
+}
+
+.swiper .swiper-pagination-bullet{
+ background: #fff;
+}
+
 
 .banner h3{
     color: #649255;
@@ -121,12 +156,9 @@ header img {
     position: absolute;
     right: 60px;
     top: 150px;
+    z-index: 3;
 }
 
-.banner img{
-    display: block;
-    margin: 0 auto;
-}
 
 .banner h2{
     color:#649255;
@@ -135,6 +167,7 @@ header img {
     position: absolute;
     bottom: 60px;
     left: 70px;
+    z-index: 3;
 }
 
 /* --------------情人節專區------------------------- */

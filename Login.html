@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登入</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/Login-style.css">
+    <link rel="stylesheet" href="css/Login-style-new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
+
 <body>
-    
+
     <!----------------------------頁首選單------------------------------------------------------------->
     <header>
         <a href="index.html"><img src="image/logo .png" alt="Logo" class="logo"></a>
@@ -31,33 +34,30 @@
 
         <ul class="icon">
             <li><a href=""><img src="image/icon search.svg" alt=""></a></li>
-            <li><a href="Login.html"><img src="image/icon-login.svg" alt=""></a></li>
+            <li><a href="Login-new.html"><img src="image/icon-login.svg" alt=""></a></li>
             <li><a href=""><img src="image/icon-shopping car.svg" alt=""></a></li>
         </ul>
     </header>
-<!------------------------內容區--------------------------------------->
+    <!------------------------內容區--------------------------------------->
     <main>
-        <!------------左邊圖片-------------------------->
-        <div class="pic">
-            <img src="image/login pic.png" alt="">
-        </div>
-
-        <!------------右邊登入框----------------------------->
+     <!------------登入框----------------------------->
+     <div class="frame">
         <div class="information">
-        <div class="block">
-            <h1>Log In</h1>
-            <h2>帳號/Account Number</h2>
-            <input type="text" class="text">
-            <h2>密碼/Password</h2>
-            <input type="text" class="text">
-            <h3>忘記密碼?</h3>
-           <input type="submit" value="註冊" class="button"> <input type="submit" value="登入" class="button">
+            <div class="block">
+                <h1>Log In</h1>
+                <h2>帳號 / Account Number</h2>
+                <input type="text" class="text" placeholder="請輸入信箱或手機號碼">
+                <h2>密碼 / Password</h2>
+                <input type="text" class="text" placeholder="請輸入密碼">
+                <a href="#"><h3>忘記密碼?</h3></a>
+                <a href="Signup.html"><input type="submit" value="註冊" class="button"></a> <a href=""><input type="submit" value="登入" class="button"></a>
+            </div>
         </div>
-        </div>   
+    </div>
     </main>
 
-     <!-------------------------頁尾------------------------------------------------->
-     <footer>
+    <!-------------------------頁尾------------------------------------------------->
+    <footer>
         <div class="bottom">
             <a href="index.html"><img src="image/logo .png" alt=""></a>
             <ul>
@@ -67,9 +67,11 @@
                 <li><a href="Preserved Flower.html">永生花</a></li>
                 <li><a href="Brand Concept.html">品牌理念</a></li>
             </ul>
-            <p>本網站為緯育TibaMe第93期前端工程師專業技術養成班學員專題作品，本平台僅供學習、展示之用途。<br>
+            <p>本網站為緯育TibaMe第93期前端工程師專業技術養成班學員專題作品，<br>
+                本平台僅供學習、展示之用途若有侵權疑慮，您可以私訊緯育 TibaMe，後續會由專人協助處理。<br>
                 參考資源: 花譜花藝、芙拉花藝、朵緹花藝、花糜、花時、Morning cat、白色花藝、敘思花藝。以致敬所有我喜愛的花藝店。</p>
         </div>
     </footer>
 </body>
+
 </html>

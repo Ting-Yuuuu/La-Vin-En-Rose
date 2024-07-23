@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -18,7 +21,7 @@
     <header>
         <a href="index.html"><img src="image/logo .png" alt="Logo" class="logo"></a>
         <ul class="items">
-            <li><a href="All-banner.html">所有商品</a></li>
+            <li><a href="All.html">所有商品</a></li>
             <li><a href="">主題分類</a>
                 <ol>
                     <li><a href="Valentine.html">情人節花禮</a></li>
@@ -39,17 +42,36 @@
     </header>
 
     <!------------------------首圖banner---------------------------------------------->
-    <div class="banner">
-        <a href=""><img src="image/all-banner.png" alt=""></a>
+    <div class="swiper"> <!-- swiper class 會被 new Swiper('.swiper' 使用 -->
+        <div class="swiper-wrapper"> <!-- 讓Swiper知道要輪播的內容位置必須為 swiper-wrapper -->
+            <div class="swiper-slide">
+                <img src="image/all banner pic1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="image/all banner pic2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="image/all-banner pic3.png" alt="">
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
-    <!-------------左邊按鈕---------------->
-    <div class="left">
-        <a href=""><img src="image/button_left.svg" alt=""></a>
-    </div>
-    <!-------------右邊按鈕---------------->
-    <div class="right">
-        <a href=""><img src="image/button_right.svg" alt=""></a>
-    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', { // 創建一個輪播
+            autoplay: { // 自動輪播 swiper
+                delay: 4 * 1000, // 每兩秒切換下一張
+            },
+            loop: true, // 輪播結束後回到第一張繼續輪播
+            navigation: { // 前一張、下一張按鈕
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
     <!-------------------商品列表---------------------------------------->
     <main>
@@ -71,7 +93,7 @@
                         <h3>春日繽紛鬱金香花藍</h3>
                         <p>$ 2,880 </p>
                     </a></li>
-                
+
                 <li><a href="">
                         <div class="pic"><img src="image/all-freshflower 2.jpg" alt=""></div>
                         <h3>春意盎然綜合花籃</h3>

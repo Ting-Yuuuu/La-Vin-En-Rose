@@ -107,16 +107,32 @@ header img {
 }
 
 .side-img img {
-    width: 36.3vw;
+    width: 36.5vw;
 
 }
 
 /* ----------中間banner區------------------- */
-.banner {}
+.swiper {
+ 
+}
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.banner img {
-    width: 26vw;
+.swiper-slide img{
+    background-size: contain;
+    width: 26.2vw;
+}
 
+.swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+.swiper .swiper-pagination-bullet{
+ background: #fff;
 }
 
 /* --------------中間拱型區-------------- */
