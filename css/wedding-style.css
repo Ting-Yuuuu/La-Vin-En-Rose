@@ -120,6 +120,19 @@ header img {
     font-weight: 400;
     left: 44px;
     bottom: 40px;
+    transition: all 1.5s;
+    animation: title 1.5s forwards;
+}
+
+@keyframes title{
+    0%{
+        left: -500px;
+        opacity: 0;
+    }
+    100%{
+        left: 44px;
+        opacity: 1;
+    }
 }
 
 /* ---------------------中間內容區----------------------------------- */

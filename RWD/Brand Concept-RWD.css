@@ -1,0 +1,227 @@
+/* ------------當螢幕小於820-------------------- */
+@media screen and (max-width:820px){
+/* --------------頁首選單區----------------------- */
+header{
+    height: 60px;
+}
+
+header img{
+    width: 200px;
+}
+
+.items{
+    width: auto;
+    gap: 28px;
+}
+
+.items a{
+    font-size: 16px;
+}
+
+/* -------------------中間內容區----------------------- */
+
+main{
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* ------------------左邊圖片文字區---------------------- */
+.photo{
+    text-align: center;
+}
+.photo img{
+    margin: 0;
+    margin-top: 40px;
+}
+
+/* -----------------右邊文字介紹---------------------- */
+.text{
+    margin: 0;
+    margin-top: 60px;
+}
+
+/*--------------------頁尾------------------------ */
+.bottom{
+    width: auto;
+}
+
+}
+
+
+
+/* --------------當螢幕小於430--------------- */
+@media screen and (max-width:430px){
+/* -------------頁首選單區---------------------------- */
+header img{
+    width: 180px;
+}     
+
+header .hamburger{
+    display: block;
+    margin-right: 10px;
+}
+main{
+    background-size: cover;
+    height: 800px;
+}
+
+.frame{
+    width: 88vw;
+}
+
+.information{
+    width: 84vw;
+    margin: 5px 6px;
+}
+
+/* --------------將選單中隱藏的登入列顯示--------- */
+
+header .items>.login{
+    display: flex;
+    border-bottom: 1px solid #b1cea7;
+    width: 100%;
+    background-color: #ddedda;
+}
+
+header .items>.login li{
+    flex-grow: 1;
+    padding-left: 10px;
+    text-align: center;
+}
+
+header .items>.login a{
+
+}
+
+/* -----------------頁首選單列----------------------- */
+.items{
+    flex-direction: column;
+    gap: 0px;
+    width: 70%;
+    background-color: #f5f9f4;
+    position: absolute;
+    top: 60px;
+    right: -430px;
+    position: fixed;
+    transition: right 1s ease;
+}
+
+/* -----------------點選漢堡線後從右側滑入選單------------ */
+.items.active {
+    right:0;
+    position: absolute;
+}
+
+/* ----------------------------------------------------- */
+
+.items li{
+    height: 50px;
+    border-bottom: 1px solid #b1cea7;
+    padding-left: 20px;
+}
+.items a{
+    line-height: 50px;
+    color: #989898;
+    font-weight: bold;
+    display: block;
+}
+
+header .items>li:nth-child(3){
+    margin-bottom: 120px;
+}
+
+/* --------------選單列的子選單--------------------- */
+
+.items li>ol{
+    display: block;
+    position: static;
+    background-color:#f5f9f4 ;
+    border-top: 1px solid #b1cea7;
+}
+
+.items li>ol li{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: left;
+    border-bottom: 1px solid #b1cea7;
+}
+
+.items li>ol a{
+    line-height: 40px;
+}
+
+/* ----------------將登入列隱藏---------------------- */
+
+.icon{
+    display: none;
+}
+
+/* -----------------中間內容區---------------------- */
+/* -----------------左邊圖片標題-------------------- */
+main{
+    height: 100%;
+    flex-direction: column;
+}
+
+.photo img{
+    height: 400px;
+}
+.photo h3{
+    left: 18%;
+    top: 20%;
+    font-size: 22px;
+}
+/* ------------------右邊文字區域---------------------- */
+.text h1{
+    font-size: 32px;
+}
+.text h2{
+    font-size: 16px;
+}
+.text img{
+    width: 240px;
+}
+.text p{
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+/* ----------------------頁尾------------------------- */
+
+footer{
+    height: 200px;
+}
+
+.bottom{
+    width: auto;
+    height: 170px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.block h1{
+    width: auto;
+    font-size: 66px;
+}
+
+.bottom img{
+    width: 60vw;
+}
+
+.bottom ul{
+    width: 80vw;
+}
+
+.bottom a{
+    font-size: 14px;
+}
+.bottom p{
+    width: 80vw;
+    font-size: 10px;
+    margin: 16px auto 0;
+}
+
+}
+    

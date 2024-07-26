@@ -1,0 +1,215 @@
+/* -------------------當螢幕小於820時-------------------- */
+@media screen and (max-width:820px){
+    /* ---------------頁首選單區---------------------------- */
+body{
+    padding-top: 60px;
+}
+
+header{
+    height: 60px;
+}
+
+header img{
+    width: 200px;
+}
+
+.items{
+    width: auto;
+    gap: 28px;
+}
+
+.items a{
+    font-size: 16px;
+}
+
+/* -------------------首圖大圖區------------------------- */
+.top{
+    height: 370px;
+    position: relative;
+}
+
+.top img{
+    margin-top: 0;
+}
+
+.top h1{
+    font-size: 32px;
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+    animation: title 1s cubic-bezier(.1,.65,.53,1.31) forwards ;
+}
+
+@keyframes title{
+    0%{
+        bottom: -120px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 80px;
+        opacity: 1;
+    }
+}
+/* --------------------中間文字圖片----------------------- */
+.left {
+    float: none;
+    margin-top: 0;
+}
+
+.left ul{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.left li{
+    width: 106px;
+    height: 60px;
+}
+
+.left img{
+    display: block;
+    margin: 0 auto;
+}
+
+.text h2{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.block{
+    justify-content: center;
+}
+
+.block li{
+    width: 74px;
+}
+
+/* -------------------------商品區----------------------- */
+/* -----------------鮮花商品列表---------------------------- */
+.fresh ul{
+    width: 90vw;
+}
+
+.fresh a{
+    width: 170px;
+    height: 170px;
+}
+
+.fresh .pic{
+    width: 170px;
+    height: 170px;
+}
+
+.fresh img{
+    width: 170px;
+    height: 170px;
+}
+
+.fresh h3{
+    overflow-wrap: break-word;
+    width: 170px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.fresh p{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

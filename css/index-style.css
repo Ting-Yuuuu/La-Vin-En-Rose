@@ -22,6 +22,29 @@ header {
     left: 0;
 }
 
+/* --------------漢堡線(隱藏)------------------- */
+
+header .hamburger{
+    display: none;
+    width: 40px;
+}
+
+/* -----------選單中的登入列(隱藏)------------ */
+
+header .items>.login{
+    display: flex;
+    display: none;
+}
+
+header .items>.login a{
+    color: #649255;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
 header ul {
     display: flex;
     display: block;
@@ -29,7 +52,7 @@ header ul {
 
 
 header img {
-    width: 300px;
+    width: 25vw;
     flex-shrink: 0;
     line-height: 100px;
     margin-left: 20px;
@@ -37,7 +60,7 @@ header img {
 
 .items {
     display: flex;
-    gap: 68px;
+    gap: 4vw;
     position: relative;
 }
 
@@ -136,7 +159,6 @@ header img {
 .swiper-slide img{
     background-size: contain;
     width: 650px;
-    border-radius: 50% 50% 20px 20px ;
 }
 
 .swiper-pagination-bullet-active{
@@ -154,8 +176,8 @@ header img {
     font-family: Carattere;
     font-size: 56px;
     position: absolute;
-    right: 60px;
-    top: 150px;
+    right: 4%;
+    top: 16%;
     z-index: 3;
 }
 
@@ -165,8 +187,8 @@ header img {
     font-family: Carattere;
     font-size: 64px;
     position: absolute;
-    bottom: 60px;
-    left: 70px;
+    bottom: 4%;
+    left:4%;
     z-index: 3;
 }
 
@@ -174,14 +196,13 @@ header img {
 .valentine{
     background-color: #FCF7EC;
     height: 600px;
-    width: 100%;
     position: relative;
 }
 
 .valentine img{
     border-radius: 30px;
-    margin-top: 86px;
-    margin-left: 90px;
+    margin-top: 6vw;
+    margin-left: 7vw;
     width: 800px;
 }
 
@@ -191,18 +212,18 @@ header img {
     border-radius: 30px;
     background-color: rgba(255, 217, 220, 0.45);
     position: absolute;
-    top:316px;
-    left: 698px;
+    top:25vw;
+    left: 54vw;
 }
 
 .valentine h1{
     color:#464646;
     text-shadow: 4px 4px 4px #FFF;
     font-family: Carattere;
-    font-size: 128px;
+    font-size: 10vw;
     position: absolute;
-    top:236px ;
-    left: 818px;
+    top:19vw;
+    left: 63vw;
 }
 
 /* ---------------畢業專區------------------- */
@@ -214,8 +235,8 @@ header img {
 
 .graduation img{
     border-radius: 30px;
-    margin-left: 386px;
-    margin-top: 76px;
+    margin-left: 24vw;
+    margin-top: 6vw;
     width: 800px;
 }
 
@@ -225,18 +246,18 @@ header img {
     border-radius: 30px;
     background-color:rgba(254, 247, 212, 0.59);
     position: absolute;
-    top: 310px;
-    left: 90px;
+    top: 24vw;
+    left: 7vw;
 }
 
 .graduation h1{
     color:#464646;
     text-shadow: 4px 4px 4px #FFF;
     font-family: Carattere;
-    font-size: 128px;
+    font-size: 10vw;
     position: absolute;
-    top: 230px;
-    left: 110px;
+    top: 18vw;
+    left: 9vw;
 }
 
 /* --------------婚禮專區------------------- */
@@ -248,8 +269,8 @@ header img {
 
 .wedding img{
     border-radius: 30px;
-    margin-top: 46px;
-    margin-left: 90px;
+    margin-top: 3.5vw;
+    margin-left: 7vw;
     width: 800px;
 }
 
@@ -259,18 +280,18 @@ header img {
     border-radius: 30px;
     background-color:rgba(255, 255, 255, 0.50);
     position: absolute;
-    top:276px;
-    left: 698px;
+    top:21.5vw;
+    left: 54vw;
 }
 
 .wedding h1{
     color:#464646;
     text-shadow: 4px 4px 4px #FFF;
     font-family: Carattere;
-    font-size: 128px;
+    font-size: 10vw;
     position: absolute;
-    top:196px ;
-    left: 818px;
+    top:15vw;
+    left: 63vw;
 }
 
 /* --------------頁尾------------------- */
@@ -281,7 +302,7 @@ footer {
 }
 
 .bottom {
-    width: 792px;
+    width: 62vw;
     height: 210px;
     margin: 0 auto;
     padding: 28px;
@@ -321,7 +342,8 @@ footer {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
-    margin-top: 16px;
     line-height: 1.5;
+    margin: 0 auto;
+    margin-top: 16px;
 }
 

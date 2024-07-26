@@ -22,6 +22,30 @@ header {
     left: 0;
 }
 
+/* --------------漢堡線(隱藏)------------------- */
+
+header .hamburger{
+    display: none;
+    width: 40px;
+}
+
+/* -----------選單中的登入列(隱藏)------------ */
+
+header .items>.login{
+    display: flex;
+    display: none;
+}
+
+header .items>.login a{
+    color: #649255;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* -------------------------------------------- */
+
 header ul {
     display: flex;
     display: block;
@@ -29,7 +53,7 @@ header ul {
 
 
 header img {
-    width: 300px;
+    width: 25vw;
     flex-shrink: 0;
     line-height: 100px;
     margin-left: 20px;
@@ -37,7 +61,7 @@ header img {
 
 .items {
     display: flex;
-    gap: 68px;
+    gap: 4vw;
     position: relative;
 }
 
@@ -150,11 +174,11 @@ main{
 .text{
     text-align: center;
     margin-top: 70px;
-    margin-left: 90px;
+    margin-left: 6vw;
 }
 
 .text img{
-    width: 360px;
+    width: 25vw;
 }
 
 .text h1{
@@ -233,43 +257,6 @@ footer {
     line-height: 1.5;
 }
 
-/* ------------當螢幕小於820-------------------- */
-@media screen and (max-width:820px){
-main{
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    text-align: center;
-}
-
-.photo img{
-    margin: 0;
-    margin-top: 60px;
-}
-
-.text{
-    margin: 0;
-    margin-top: 60px;
-}
-
-
-}
-
-/* --------------當螢幕小於430--------------- */
-@media screen and (max-width:430px){
-
-main{
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    text-align: center;
-}
-
-
-
-}
 
 
 

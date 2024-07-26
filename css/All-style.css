@@ -23,6 +23,29 @@ header {
     left: 0;
 }
 
+/* --------------漢堡線(隱藏)------------------- */
+
+header .hamburger{
+    display: none;
+    width: 40px;
+}
+
+/* -----------選單中的登入列(隱藏)------------ */
+
+header .items>.login{
+    display: flex;
+    display: none;
+}
+
+header .items>.login a{
+    color: #649255;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
 header ul {
     display: flex;
     display: block;
@@ -30,7 +53,7 @@ header ul {
 
 
 header img {
-    width: 300px;
+    width: 25vw;
     flex-shrink: 0;
     line-height: 100px;
     margin-left: 20px;
@@ -38,7 +61,7 @@ header img {
 
 .items {
     display: flex;
-    gap: 68px;
+    gap: 4vw;
 }
 
 .items li {}
@@ -103,7 +126,7 @@ header img {
 /* ----------------首圖banner------------------- */
 .swiper {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     
 }
 .swiper-slide {
@@ -134,7 +157,7 @@ main {
 
 /* -------------商品標題-------------------- */
 .title {
-    width: 1188px;
+    width: 94%;
     margin: 0 auto;
     border-bottom: 2px solid #649255;
     padding-top: 40px;
@@ -218,11 +241,13 @@ main {
 }
 
 .product h3 {
+    width: 282px;
     color: #505050;
     font-family: "Noto Sans TC";
     font-size: 20px;
     font-weight: 600;
     margin-top: 12px;
+    white-space: normal;
 }
 
 .product h3:hover {

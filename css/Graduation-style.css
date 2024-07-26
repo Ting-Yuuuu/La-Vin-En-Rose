@@ -22,6 +22,29 @@ header {
     left: 0;
 }
 
+/* --------------漢堡線(隱藏)------------------- */
+
+header .hamburger{
+    display: none;
+    width: 40px;
+}
+
+/* -----------選單中的登入列(隱藏)------------ */
+
+header .items>.login{
+    display: flex;
+    display: none;
+}
+
+header .items>.login a{
+    color: #649255;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
 header ul {
     display: flex;
     display: block;
@@ -29,7 +52,7 @@ header ul {
 
 
 header img {
-    width: 300px;
+    width: 25vw;
     flex-shrink: 0;
     line-height: 100px;
     margin-left: 20px;
@@ -37,7 +60,7 @@ header img {
 
 .items {
     display: flex;
-    gap: 68px;
+    gap: 4vw;
 }
 
 .items li {}
@@ -117,11 +140,22 @@ header img {
     color: #313131;
     text-shadow: 4px 4px 4px rgba(128, 128, 128, 0.20);
     font-size: 52px;
-    height: 476px;
-    height: 180px;
     position: absolute;
     bottom: 120px;
     left: 60px;
+    transition:  all 1s;
+    animation: title 1s cubic-bezier(.1,.65,.53,1.31) forwards ;
+}
+
+@keyframes title{
+    0%{
+        bottom: -180px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 180px;
+        opacity: 1;
+    }
 }
 
 /* ---------------中間文字圖片和色塊---------------------- */
@@ -267,7 +301,7 @@ main {
 /* ------------------麵包屑---------------------- */
 
 .fresh .bread {
-    width: 1188px;
+    width: 94%;
     margin: 0 auto;
 }
 
@@ -296,7 +330,7 @@ main {
 .fresh .title {
     border-bottom: 2px solid #649255;
     display: flex;
-    width: 1188px;
+    width: 94%;
     height: 60px;
     margin-bottom: 30px;
     margin: 0 auto;
@@ -374,6 +408,7 @@ main {
     font-size: 20px;
     font-weight: 600;
     margin-top: 12px;
+    width: 282px;
 }
 
 .fresh h3:hover {
@@ -402,7 +437,7 @@ main {
 .dry .title {
     border-bottom: 2px solid #649255;
     display: flex;
-    width: 1188px;
+    width:94%;
     height: 60px;
     margin-bottom: 30px;
     margin: 0 auto;
@@ -480,6 +515,7 @@ main {
     font-size: 20px;
     font-weight: 600;
     margin-top: 8px;
+    width: 282px;
 }
 
 .dry h4:hover {
@@ -509,7 +545,7 @@ footer {
 }
 
 .bottom {
-    width: 792px;
+    width: 62vw;
     height: 210px;
     margin: 0 auto;
     padding: 28px;
@@ -517,7 +553,7 @@ footer {
 
 .bottom ul {
     display: flex;
-    width: 570px;
+    width: 45vw;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 8px;
