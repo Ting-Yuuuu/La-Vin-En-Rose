@@ -18,6 +18,34 @@ header img{
     font-size: 16px;
 }
 
+/* ---------------------子選單---------------------- */
+.items li+.list ol {
+    position: absolute;
+    display: block;
+    background-color: #e9f2e6;
+    display: none;
+    top: 60px;
+    position: fixed;
+    padding: 0 10px;
+}
+
+.items li+.list>ol li {
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #649255;
+}
+
+.items li+.list>ol a {
+    line-height: 50px;
+}
+
+
+/* ---------------------點擊時顯示子選單-----------------*/
+.list.active ol {
+    display: block; 
+  }
 /* -------------------中間內容區----------------------- */
 
 main{
@@ -44,6 +72,7 @@ main{
 /*--------------------頁尾------------------------ */
 .bottom{
     width: auto;
+    padding: 28px 90px 0;
 }
 
 }
@@ -133,24 +162,34 @@ header .items>li:nth-child(3){
 
 /* --------------選單列的子選單--------------------- */
 
-.items li>ol{
+.items li+.list ol{
     display: block;
     position: static;
     background-color:#f5f9f4 ;
+    padding: 0 20px;
     border-top: 1px solid #b1cea7;
 }
 
-.items li>ol li{
+.items li+.list>ol li{
     height: 40px;
     width: 100%;
     line-height: 40px;
     text-align: left;
     border-bottom: 1px solid #b1cea7;
+
 }
 
-.items li>ol a{
+.items li+.list>ol li:nth-child(3){
+    border-bottom:1px solid #b1cea7;
+}
+
+.items li+.list>ol a{
     line-height: 40px;
 }
+/* ---------------------點擊時顯示子選單-----------------*/
+.list.active ol {
+    display: block; 
+  }
 
 /* ----------------將登入列隱藏---------------------- */
 

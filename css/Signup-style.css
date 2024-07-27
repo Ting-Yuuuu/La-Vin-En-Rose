@@ -13,7 +13,6 @@ header {
     width: 100%;
     height: 100px;
     background-color: rgba(255, 255, 255, 0.30);
-    ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,6 +22,29 @@ header {
     left: 0;
 }
 
+/* --------------漢堡線(隱藏)------------------- */
+
+header .hamburger{
+    display: none;
+    width: 40px;
+}
+
+/* -----------選單中的登入列(隱藏)------------ */
+
+header .items>.login{
+    display: flex;
+    display: none;
+}
+
+header .items>.login a{
+    color: #649255;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
 header ul {
     display: flex;
     display: block;
@@ -30,7 +52,7 @@ header ul {
 
 
 header img {
-    width: 300px;
+    width: 25vw;
     flex-shrink: 0;
     line-height: 100px;
     margin-left: 20px;
@@ -38,7 +60,7 @@ header img {
 
 .items {
     display: flex;
-    gap: 68px;
+    gap: 4vw;
     position: relative;
 }
 
@@ -62,30 +84,34 @@ header img {
 }
 
 /* ---------------------子選單-------------------- */
-.items li>ol {
+.items li+.list ol {
     position: absolute;
     display: block;
-    background-color: #d3e4cdb3;
+    background-color: #e9f2e6;
     display: none;
+    padding: 0 20px;
 }
 
-.items li>ol li {
-    width: 160px;
+.items li+.list>ol li {
+    width: 120px;
     height: 60px;
     text-align: center;
     line-height: 60px;
     border-bottom: 1px solid #649255;
 }
 
-.items li>ol a {
+.items li+.list>ol li:nth-child(3){
+    border-bottom: none;
+}
+
+.items li+.list>ol a {
     line-height: 60px;
 }
 
 
-.items li:nth-child(2):hover ol {
+.items>li+.list:hover ol {
     display: block;
 }
-
 
 /* ----------------------搜尋 會員登入---------------------------- */
 
@@ -110,6 +136,7 @@ main{
     height: 800px;
     background-repeat: no-repeat;
     padding-top: 150px;
+    background-size: cover;
 }
 /* -----------資料輸入框----------------------- */
 h1{
@@ -165,6 +192,7 @@ h2{
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
     outline: 0;
     padding-left:12px;
+    font-size: 14px;
 }
 
 .inside-frame .name-block:focus{
@@ -212,7 +240,7 @@ h2{
     outline: 0;
     padding-left: 12px;
     margin-bottom: 20px;
-    
+    font-size: 14px;
 }
 
 .block input:focus{
@@ -232,7 +260,12 @@ button{
     font-size: 16px;
     font-weight: bold;
     border: 0;
-    margin: 8px 185px;
+    display: block;
+    margin: 0 auto;
+}
+
+.block+a{
+    text-decoration: none;
 }
 
 .inside-frame img{

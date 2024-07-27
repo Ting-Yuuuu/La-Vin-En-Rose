@@ -22,6 +22,30 @@ header {
     left: 0;
 }
 
+/* --------------漢堡線(隱藏)------------------- */
+
+header .hamburger{
+    display: none;
+    width: 40px;
+}
+
+/* -----------選單中的登入列(隱藏)------------ */
+
+header .items>.login{
+    display: flex;
+    display: none;
+}
+
+header .items>.login a{
+    color: #649255;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
+
 header ul {
     display: flex;
     display: block;
@@ -29,7 +53,7 @@ header ul {
 
 
 header img {
-    width: 300px;
+    width: 25vw;
     flex-shrink: 0;
     line-height: 100px;
     margin-left: 20px;
@@ -37,7 +61,7 @@ header img {
 
 .items {
     display: flex;
-    gap: 68px;
+    gap: 4vw;
 }
 
 .items li {}
@@ -58,29 +82,35 @@ header img {
 }
 
 /* ---------------------子選單-------------------- */
-.items li > ol{
+.items li+.list ol {
     position: absolute;
     display: block;
-    background-color: #d3e4cdb3;
+    background-color: #e9f2e6;
     display: none;
+    padding: 0 20px;
 }
 
-.items li > ol li{
-   width: 160px;
-   height: 60px;
-   text-align: center;
-   line-height: 60px;
-   border-bottom: 1px solid #649255;
+.items li+.list>ol li {
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #649255;
 }
 
-.items li > ol a{
+.items li+.list>ol li:nth-child(3){
+    border-bottom: none;
+}
+
+.items li+.list>ol a {
     line-height: 60px;
 }
 
 
-.items li:nth-child(2):hover ol{
+.items>li+.list:hover ol {
     display: block;
 }
+
 
 /* ----------------------搜尋 會員登入---------------------------- */
 
@@ -146,7 +176,7 @@ main {
 /* -----------------------鮮花捧花------------------------- */
 
 .freshflower {
-    width: 1188px;
+    width: 94vw;
     margin: 0px auto;
     padding-top: 30px;
 }
@@ -214,6 +244,7 @@ main {
     display: flex;
     justify-content: space-between;
     font-size: 0;
+    flex-wrap: wrap;
 }
 
 .freshflower li {}
@@ -247,6 +278,7 @@ main {
     font-size: 20px;
     font-weight: 600;
     margin-top: 12px;
+    width: 282px;
 }
 
 .freshflower h4:hover {
@@ -272,7 +304,6 @@ main {
 /* ------------------中間圖片區------------------------ */
 
 .photo {
-    height: 312px;
     width: 469px;
     border-radius: 30px;
     margin-left: 128px;
@@ -280,10 +311,8 @@ main {
 }
 
 .middle {
-    width: 500px;
-    height: 240px;
     float: right;
-    margin-right: 100px;
+    margin-right: 160px;
 }
 
 .middle h3 {
@@ -307,7 +336,7 @@ main {
 /* ------------------永生捧花---------------------- */
 
 .dry {
-    width: 1188px;
+    width: 94vw;
     margin: 0px auto;
     font-size: 0;
 }
@@ -353,6 +382,7 @@ main {
     margin: 0 auto;
     margin-top: 30px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .dry li {}
@@ -384,7 +414,7 @@ main {
     color: #313131;
     font-family: "Noto Sans TC";
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 8px;
 }
 
@@ -418,7 +448,7 @@ main {
 .cor-title {
     border-bottom: 2px solid #649255;
     display: flex;
-    width: 1188px;
+    width: 94vw;
     height: 60px;
     display: flex;
 }
@@ -457,6 +487,7 @@ main {
     margin: 0 auto;
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .corsage li {}
@@ -521,7 +552,7 @@ footer {
 }
 
 .bottom {
-    width: 792px;
+    width: 62vw;
     height: 210px;
     margin: 0 auto;
     padding: 28px;
@@ -529,7 +560,7 @@ footer {
 
 .bottom ul {
     display: flex;
-    width: 570px;
+    width: 45vw;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 8px;

@@ -81,27 +81,32 @@ header img {
 }
 
 /* ---------------------子選單-------------------- */
-.items li > ol{
+.items li+.list ol {
     position: absolute;
     display: block;
-    background-color: #d3e4cdb3;
+    background-color: #e9f2e6;
     display: none;
+    padding: 0 20px;
 }
 
-.items li > ol li{
-   width: 160px;
-   height: 60px;
-   text-align: center;
-   line-height: 60px;
-   border-bottom: 1px solid #649255;
+.items li+.list>ol li {
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #649255;
 }
 
-.items li > ol a{
+.items li+.list>ol li:nth-child(3){
+    border-bottom: none;
+}
+
+.items li+.list>ol a {
     line-height: 60px;
 }
 
 
-.items li:nth-child(2):hover ol{
+.items>li+.list:hover ol {
     display: block;
 }
 
@@ -153,7 +158,7 @@ header img {
         opacity: 0;
     }
     100%{
-        bottom: 180px;
+        bottom: 120px;
         opacity: 1;
     }
 }
@@ -245,7 +250,6 @@ header img {
     display: flex;
     flex-direction: column;
     height: 516px;
-    width: 124px;
     align-items: flex-start;
     gap: 20px;
     margin-left: 24px;
@@ -375,6 +379,7 @@ main {
     margin-top: 30px;
     justify-content: space-between;
     font-size: 0;
+    flex-wrap: wrap;
 }
 
 .fresh li {}
@@ -441,9 +446,10 @@ main {
     height: 60px;
     margin-bottom: 30px;
     margin: 0 auto;
+   
 }
 
-.dry .title li {
+ .title li {
     color: #649255;
     font-family: "Noto Sans TC";
     font-size: 28px;
@@ -482,6 +488,7 @@ main {
     margin-top: 30px;
     justify-content: space-between;
     font-size: 0;
+    flex-wrap: wrap;
 }
 
 .dry li {}

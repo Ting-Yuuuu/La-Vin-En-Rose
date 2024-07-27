@@ -45,20 +45,18 @@ header img{
 /* ---------------------點擊時顯示子選單-----------------*/
 .list.active ol {
     display: block; 
-  }
-
-/* -----------------中間內容區------------------- */
-main{
-    background-size: cover;
-    height: calc(100vh - 340px);
-}
+    }
 
 /* --------------------頁尾---------------------- */
 .bottom{
     width: auto;
     padding: 28px 90px 0;
 }
+
 }
+
+
+
 
 /* --------------當螢幕小於430時------------------- */
 
@@ -175,15 +173,63 @@ header .items>li:nth-child(3){
     display: none;
 }
 
-/* ---------------表格登入框--------------------- */
-.block .text{
-    width: 60vw;
+/* -------------------註冊內容區--------------------- */
+main{
+    padding-top: 110px;
 }
 
-.block h1{
-    width: auto;
-    font-size: 66px;
+/* -------------------外框--------------------------- */
+.frame{
+    height: 514px;
+    width: 80vw;
 }
+
+.inside-frame{
+    width: 76vw;
+    height: 468px;
+}
+
+/* ----------------------內容表格------------------------- */
+.inside-frame .top-block{
+    flex-direction: column;
+    width: auto;
+}
+
+.inside-frame .name-block{
+    width: 220px;
+}
+
+.inside-frame .name{
+   width: 80%;
+   margin: 0 auto 10px;
+}
+
+.gender{
+    width: 80%;
+    display: inline-block;
+    margin: 0 auto 10px;
+}
+
+.block input{
+    width: 220px;
+    margin: 0 auto 10px;
+}
+
+.inside-frame .block{
+    width: auto;
+    width: 80%;
+}
+
+button{
+    margin-top: 20px;
+    width: 180px;
+}
+
+.inside-frame img{
+    margin: 0 4px;
+}
+
+
 
 /* -----------------頁尾------------------------- */
 footer{
@@ -218,5 +264,4 @@ footer{
     font-size: 10px;
     margin: 16px auto 0;
 }
-
 }

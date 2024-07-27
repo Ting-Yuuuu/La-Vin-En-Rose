@@ -13,8 +13,26 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="RWD/Brand Concept-RWD.css">
 
-
     <script>
+        //當螢幕小於820時，點擊主題分類顯示子選單
+        $(document).ready(function() {
+            // 點擊主題分類顯示子選單
+            $('.list > a').click(function(event) {
+            event.preventDefault(); // 防止預設的點擊行為
+            $(this).parent().toggleClass('active');
+            event.stopPropagation(); // 防止點擊事件傳播
+            });
+
+            // 點擊頁面其他區域隱藏子選單
+            $(document).click(function(event) {
+            if (!$(event.target).closest('.list').length) {
+                $('.list').removeClass('active');
+            }
+            });
+        });
+
+
+        // 當螢幕小於430時，點擊漢堡線選單出現
         $(document).ready(function(){
             $('.hamburger').click(function(event){
                 event.stopPropagation(); // 阻止事件冒泡，以防止事件觸發 document 的點擊事件
@@ -44,7 +62,7 @@
                 <li><a href="Signup.html">註冊會員</a></li>
             </ul>    
             <li><a href="All.html">所有商品</a></li>
-            <li><a href="">主題分類</a>
+            <li class="list"><a href="">主題分類</a>
                 <ol>
                     <li><a href="Valentine.html">情人節花禮</a></li>
                     <li><a href="Graduation.html">畢業花禮</a></li>

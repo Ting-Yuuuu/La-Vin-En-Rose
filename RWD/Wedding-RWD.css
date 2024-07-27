@@ -50,135 +50,101 @@ header img{
 .list.active ol {
     display: block; 
   }
-/* -------------------首圖大圖區------------------------- */
-.top{
-    height: 370px;
-    position: relative;
-}
 
+/* ---------------------首圖大圖區------------------------ */
 .top img{
     margin-top: 0;
 }
 
-.top h1{
-    font-size: 32px;
-    position: absolute;
-    bottom: 100px;
-    left: 60px;
-    animation: title 1s cubic-bezier(.1,.65,.53,1.31) forwards ;
+.top h2{
+    font-size: 38px;
 }
-
-@keyframes title{
-    0%{
-        bottom: -120px;
-        opacity: 0;
-    }
-    100%{
-        bottom: 80px;
-        opacity: 1;
-    }
-}
-/* --------------------中間文字圖片----------------------- */
-.left {
-    margin-right: 38px;
-}
-
-.left ul{
-    width: 340px;
-}
-
-.left li{
-    width: 60px;
-    height: 60px;
-}
-
-.left img{
-    width: 340px;
-}
-
-.text h2{
-    font-size: 26px;
-}
-
-.block ul{
-    height: 300px;
-    gap: 10px;
-    margin-left: 16px;
-}
-
-.block li{
-   width: 64px;
-}
-
-.block img {
-    height: 300px;
-}
-
-/* -------------------------商品區----------------------- */
+/* ----------------------商品區---------------------------- */
 main{
-    height: 800px;
+    height: 1550px;
 }
-/* ---------------------麵包屑--------------------------- */
+
+/* --------------------鮮花捧花--------------------------- */
+/* ---------------------麵包屑---------------------------- */
 .bread a{
     font-size: 14px;
 }
-
-/* ------------------鮮花標題----------------------------- */
-.fresh .title{
+/* ----------------------商品標題---------------------------- */
+.title{
     width: 90vw;
-    padding-top: 20px;
 }
 
-.fresh .title li{
+.title li{
     font-size: 24px;
 }
 
-.fresh .title a{
+.title a{
     font-size: 16px;
 }
-
-
-/* -----------------鮮花商品列表---------------------------- */
-.fresh{
+/* ------------------------商品區--------------------------- */
+.freshflower{
     width: 90vw;
 }
 
-.fresh ul{
-    width: 90vw;
-}
-
-.fresh .pic{
+.freshflower .pic{
     width: 170px;
     height: 170px;
 }
 
-.fresh img{
+.freshflower img{
     width: 170px;
     height: 170px;
 }
 
-.fresh h3{
+.freshflower h4{
     overflow-wrap: break-word;
     width: 170px;
     font-size: 16px;
     line-height: 1.2;
 }
 
-.fresh p{
+.freshflower p{
     font-size: 14px;
+    margin-bottom: 90px;
 }
 
-/* -----------------------永生/乾燥標題--------------------- */
-.dry .title li{
+/* ------------------中間圖片區----------------------------- */
+.photo{
+    width: 370px;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.middle{
+    margin: 0;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+
+.middle h3{
     font-size: 24px;
 }
 
-.dry .title a{
-    font-size: 16px;
+.middle p{
+    margin-top: 10px;
 }
 
-/* -------------------永生/乾燥商品列-------------------------- */
-.dry ul{
+/* ----------------------永生捧花---------------------------- */
+/* ---------------------標題--------------------------------- */
+.dry-title{
+    width: 90vw;
+}
+
+.dry-title li{
+    font-size: 24px;
+}
+
+.dry-title a{
+    font-size: 16px;
+}
+/* --------------------------商品列--------------------------- */
+.dry{
     width: 90vw;
 }
 
@@ -192,26 +158,62 @@ main{
     height: 170px;
 }
 
-.dry h4{
+.dry li h4{
     overflow-wrap: break-word;
     width: 170px;
     font-size: 16px;
     line-height: 1.2;
 }
-
-.dry p{
+.dry li p{
     font-size: 14px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 
-/* ---------------------頁尾--------------------------- */
+/* ----------------------永生乾燥胸花------------------------ */
+/* -------------------------標題---------------------------- */
+.cor-title{
+    width: 90vw;
+    padding-top: 20px;
+}
+
+.cor-title li{
+    font-size: 24px;
+}
+
+.cor-title a{
+    font-size: 16px;
+}
+
+/* ------------------------商品區-------------------------- */
+.corsage{
+    width: 90vw;
+}
+
+.corsage .pic{
+    width: 170px;
+    height: 170px;
+}
+
+.corsage img{
+    width: 170px;
+    height: 170px;
+}
+.corsage h4{
+    overflow-wrap: break-word;
+    width: 170px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.corsage p{
+    font-size: 14px;
+}
+
 .bottom{
     width: auto;
     padding: 28px 90px 0;
 }
+
 }
-
-
 
 /* -----------------當螢幕小於430時---------------------- */
 @media screen and (max-width:430px){
@@ -223,10 +225,6 @@ header img{
 header .hamburger{
     display: block;
     margin-right: 10px;
-}
-main{
-    background-size: cover;
-    height: 800px;
 }
 
 .frame{
@@ -326,109 +324,68 @@ header .items>li:nth-child(3){
 /* ---------------------點擊時顯示子選單-----------------*/
 .list.active ol {
     display: block; 
-  }
+    }
 
 
 /* --------------------登入列隱藏----------------- */
 .icon{
     display: none;
 }
-
-
-/* ------------------首圖大圖標題文字------------------- */
-.top{
-    height: 180px;
-}
-
-.top h1{
-    font-size: 20px;
-    left: 20px;
+    
+/* ----------------------首張大圖區-------------------- */
+.top h2{
+    font-size: 24px;
+    bottom: 20px;
+    left: 30px;
+    transition: all 1.5s;
+    animation: title 1.5s forwards;
 }
 
 @keyframes title{
     0%{
-        bottom: -100px;
+        left: -200px;
         opacity: 0;
     }
     100%{
-        bottom: 20px;
+        left: 30px;
         opacity: 1;
     }
 }
+/* -----------------------商品列------------------------------- */
+main{
+    height: 2560px;
+}
+/* -----------------------鮮花捧花-------------------------- */
+/* ------------------------商品列----------------------------- */
+.freshflower p{
+    margin-bottom: 50px;
+}
 
-/* -----------------中間圖片和色塊----------------------- */
-.left{
+/* -----------------------中間圖片區------------------------ */
+.photo{
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.middle{
     float: none;
     margin: 0;
+}
+
+.middle h3{
+    margin: 0;
+    margin-top: 10px;
     text-align: center;
-    padding-top: 30px;
 }
 
-.text h2{
+.middle p{
     text-align: center;
 }
 
-.left ul{
-    margin: 12px auto 0px;
-
-}
-
-.block{
-    justify-content: center;
-}
-
-/* -----------------------商品區-------------------------- */
-main{
-    height: 1300px;
-}
-/* --------------------麵包屑-------------------------- */
-.fresh .bread{
-    font-size: 14px;
-}
-
-/* ----------------------標題---------------------------- */
-.fresh .title a{
-    text-align: right;
-}
-
-/* --------------------商品列---------------------------- */
-.fresh{
-    width: 90vw;
-}
-.fresh ul{
-    width: 90vw;
-}
-
-.fresh a{
-    width: 170px;
-    height: 170px;
-}
-
-.fresh .pic{
-    width: 170px;
-    height: 170px;
-}
-
-.fresh img{
-    width: 170px;
-    height: 170px;
-}
-
-.fresh h3{
-    overflow-wrap: break-word;
-    width: 170px;
-    font-size: 16px;
-    line-height: 1.2;
-}
-
-.fresh p{
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-/* ---------------------永生乾燥商品列-------------------- */
-
-.dry ul{
+/* ------------------永生捧花------------------------------ */
+.dry{
     width: 90vw;
 }
 
@@ -442,14 +399,46 @@ main{
     height: 170px;
 }
 
-.dry h4{
+.dry li h4{
     overflow-wrap: break-word;
     width: 170px;
     font-size: 16px;
     line-height: 1.2;
 }
 
-.dry p{
+.dry li p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* ----------------永生乾燥胸花商品列------------------------ */
+.cor-title{
+    padding-top: 0;
+}
+
+.corsage{
+    width: 90vw;
+}
+
+.corsage .pic{
+    width: 170px;
+    height: 170px;
+}
+
+.corsage img{
+    width: 170px;
+    height: 170px;
+}
+
+.corsage h4{
+    overflow-wrap: break-word;
+    width: 170px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.corsage p{
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -488,46 +477,8 @@ footer{
     font-size: 10px;
     margin: 16px auto 0;
 }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

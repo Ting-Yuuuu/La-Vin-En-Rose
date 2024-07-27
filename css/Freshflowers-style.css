@@ -84,30 +84,34 @@ header img {
 }
 
 /* ---------------------子選單-------------------- */
-.items li>ol {
+.items li+.list ol {
     position: absolute;
     display: block;
-    background-color: #d3e4cdb3;
+    background-color: #e9f2e6;
     display: none;
+    padding: 0 20px;
 }
 
-.items li>ol li {
-    width: 160px;
+.items li+.list>ol li {
+    width: 120px;
     height: 60px;
     text-align: center;
     line-height: 60px;
     border-bottom: 1px solid #649255;
 }
 
-.items li>ol a {
+.items li+.list>ol li:nth-child(3){
+    border-bottom: none;
+}
+
+.items li+.list>ol a {
     line-height: 60px;
 }
 
 
-.items li:nth-child(2):hover ol {
+.items>li+.list:hover ol {
     display: block;
 }
-
 
 /* ----------------------搜尋 會員登入---------------------------- */
 

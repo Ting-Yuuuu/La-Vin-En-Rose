@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員登入</title>
+    <title>會員註冊</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/Signup-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="RWD/Signup-RWD.css">
 </head>
 
 <body>
@@ -17,9 +20,15 @@
     <!----------------------------頁首選單------------------------------------------------------------->
     <header>
         <a href="index.html"><img src="image/logo .png" alt="Logo" class="logo"></a>
+        <img src="image/icon-hamburger.svg" alt="" class="hamburger">
+       
         <ul class="items">
+            <ul class="login">
+                <li><a href="Login.html">會員登入</a></li>
+                <li><a href="Signup.html">註冊會員</a></li>
+            </ul>  
             <li><a href="All.html">所有商品</a></li>
-            <li><a href="">主題分類</a>
+            <li class="list"><a href="">主題分類</a>
                 <ol>
                     <li><a href="Valentine.html">情人節花禮</a></li>
                     <li><a href="Graduation.html">畢業花禮</a></li>
@@ -61,7 +70,7 @@
                     <h2>密碼 *</h2>
                     <input type="text" placeholder="請輸入密碼">
                 </div>
-                <a href="Login-new.html"><button><img src="image/icon-signup-flower.svg" alt="">註冊成為會員<img src="image/icon-signup-flower.svg" alt=""></button></a>
+                <a href="Login.html"><button><img src="image/icon-signup-flower.svg" alt="">註冊成為會員<img src="image/icon-signup-flower.svg" alt=""></button></a>
             </div>
         </div>
 
@@ -81,6 +90,43 @@
                 參考資源: 花譜花藝、芙拉花藝、朵緹花藝、花糜、花時、Morning cat、白色花藝、敘思花藝。以致敬所有我喜愛的花藝店。</p>
         </div>
     </footer>
+
+    <script>
+        //當螢幕小於820時，點擊主題分類顯示子選單
+        $(document).ready(function() {
+            // 點擊主題分類顯示子選單
+            $('.list > a').click(function(event) {
+            event.preventDefault(); // 防止預設的點擊行為
+            $(this).parent().toggleClass('active');
+            event.stopPropagation(); // 防止點擊事件傳播
+            });
+
+            // 點擊頁面其他區域隱藏子選單
+            $(document).click(function(event) {
+            if (!$(event.target).closest('.list').length) {
+                $('.list').removeClass('active');
+            }
+            });
+        });
+
+
+        // 當螢幕小於430時，點擊漢堡線選單出現
+        $(document).ready(function(){
+            $('.hamburger').click(function(event){
+                event.stopPropagation(); // 阻止事件冒泡，以防止事件觸發 document 的點擊事件
+                $('.items').toggleClass('active');
+            });
+    
+            // 當點擊文檔的任何地方
+            $(document).click(function(event){
+                if (!$(event.target).closest('.items').length && !$(event.target).is('.hamburger')) {
+                    $('.items').removeClass('active');
+                }
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
