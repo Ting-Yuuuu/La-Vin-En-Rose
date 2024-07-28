@@ -144,12 +144,12 @@ header img {
     width: 680px;
     margin: 0 auto;
     padding-top: 16px;
-    border-radius: 50% 50% 20px 20px ;
+    border-radius: 600px 600px 20px 20px ;
 }
 
 
 .swiper {
-    border-radius: 50% 50% 20px 20px ;
+    border-radius: 600px 600px 20px 20px ;
     width: 650px;
 }
 .swiper-slide {
