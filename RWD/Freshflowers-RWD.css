@@ -25,29 +25,26 @@ header img{
 
 
 /* ---------------------子選單---------------------- */
-.items li+.list ol{
+.items li+.list ol {
+    position: absolute;
     display: block;
-    position: static;
-    background-color:#f5f9f4 ;
-    padding: 0 20px;
-    border-top: 1px solid #b1cea7;
+    background-color: #e9f2e6;
+    display: none;
+    top: 60px;
+    position: fixed;
+    padding: 0 10px;
 }
 
-.items li+.list>ol li{
-    height: 40px;
-    width: 100%;
-    line-height: 40px;
-    text-align: left;
-    border-bottom: 1px solid #b1cea7;
-
+.items li+.list>ol li {
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #649255;
 }
 
-.items li+.list>ol li:nth-child(3){
-    border-bottom:1px solid #b1cea7;
-}
-
-.items li+.list>ol a{
-    line-height: 40px;
+.items li+.list>ol a {
+    line-height: 50px;
 }
 
 
@@ -55,7 +52,6 @@ header img{
 .list.active ol {
     display: block; 
   }
-
 /* -------------------首圖區塊-------------------------------- */
 .banner{
     margin-top: 60px;
