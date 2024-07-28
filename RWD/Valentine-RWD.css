@@ -1,0 +1,391 @@
+/* -------------------當螢幕小於820時-------------------- */
+@media screen and (max-width:820px){
+    /* ---------------頁首選單區---------------------------- */
+body{
+    padding-top: 60px;
+}
+
+header{
+    height: 60px;
+}
+
+header img{
+    width: 200px;
+}
+
+.items{
+    width: auto;
+    gap: 28px;
+}
+
+.items a{
+    font-size: 16px;
+}
+
+/* ---------------------子選單---------------------- */
+.items li+.list ol {
+    position: absolute;
+    display: block;
+    background-color: #e9f2e6;
+    display: none;
+    top: 60px;
+    position: fixed;
+    padding: 0 10px;
+}
+
+.items li+.list>ol li {
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #649255;
+}
+
+.items li+.list>ol a {
+    line-height: 50px;
+}
+
+
+/* ---------------------點擊時顯示子選單-----------------*/
+.list.active ol {
+    display: block; 
+  }
+
+/* --------------------首圖banner---------------------- */
+.top{
+    margin-top: 0;
+}
+
+/* -------------------中間區域----------------------- */
+.middle{
+    height: 388px;
+}
+/* ------------------左邊圖片-------------------------- */
+.left img{
+    height: 300px;
+    margin-left: 60px;
+}
+
+.left .ball{
+    height: 70px;
+    left: 276px;
+}
+
+.left h2{
+    font-size: 20px;
+    left: -47px;
+    top: 278px;
+}
+
+/* -------------------右邊卡片代寫------------------- */
+.right img{
+    width: 400px;
+    margin-top: 52px;
+}
+
+.right{
+    margin-left: 30px;
+}
+
+.right h2{
+    font-size: 26px;
+    margin-top: 8px;
+}
+
+/* -----------------------商品區---------------------- */
+main{
+    height: 1100px;
+}
+/* ---------------------麵包屑------------------------ */
+.bread a{
+    font-size: 14px;
+}
+
+/* --------------------鮮花花束標題------------------ */
+
+.title{
+    width: 90vw;
+}
+
+.title li{
+    font-size: 24px;
+}
+
+.title a{
+    font-size: 16px;
+}
+
+/* -----------------鮮花商品列表---------------------------- */
+.bouquet{
+    width: 90vw;
+}
+
+.bouquet ul{
+    width: 90vw;
+}
+
+.bouquet .pic{
+    width: 170px;
+    height: 170px;
+}
+
+.bouquet img{
+    width: 170px;
+    height: 170px;
+}
+
+.bouquet h3{
+    overflow-wrap: break-word;
+    width: 170px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.bouquet p{
+    font-size: 14px;
+}
+
+/* -----------------鮮花商品列表---------------------------- */
+.dry{
+    width: 90vw;
+}
+
+.dry ul{
+    width: 90vw;
+}
+
+.dry .pic{
+    width: 170px;
+    height: 170px;
+}
+
+.dry img{
+    width: 170px;
+    height: 170px;
+}
+
+.dry h3{
+    overflow-wrap: break-word;
+    width: 170px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.dry p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* ---------------------頁尾--------------------------- */
+.bottom{
+    width: auto;
+    padding: 28px 90px 0;
+}
+
+}  
+
+
+
+/* -----------------當螢幕小於430時---------------------- */
+@media screen and (max-width:430px){
+
+header img{
+    width: 180px;
+}     
+
+header .hamburger{
+    display: block;
+    margin-right: 10px;
+}
+main{
+    background-size: cover;
+    height: 800px;
+}
+
+.frame{
+    width: 88vw;
+}
+
+.information{
+    width: 84vw;
+    margin: 5px 6px;
+}
+
+/* --------------將選單中隱藏的登入列顯示--------- */
+    
+header .items>.login{
+    display: flex;
+    border-bottom: 1px solid #b1cea7;
+    width: 100%;
+    background-color: #ddedda;
+}
+
+header .items>.login li{
+    flex-grow: 1;
+    padding-left: 10px;
+    text-align: center;
+}
+
+header .items>.login a{
+
+}
+
+/* -----------------頁首選單區-------------------- */
+.items{
+    flex-direction: column;
+    gap: 0px;
+    width: 70%;
+    background-color: #f5f9f4;
+    position: absolute;
+    top: 60px;
+    right: -430px;
+    position: fixed;
+    transition: right 1s ease; 
+}
+
+/* -----------------點選漢堡線後從右側滑入選單------------ */
+.items.active {
+    right:0;
+    position: absolute;
+}
+
+/* ----------------------------------------------------- */
+.items li{
+    height: 50px;
+    width: calc(70%-40px);
+    border-bottom: 1px solid #b1cea7; 
+    padding-left: 20px;
+}
+.items a{
+    line-height: 50px;
+    color: #989898;
+    font-weight: bold;
+    display: block;
+}
+
+header .items>li:nth-child(3){
+    margin-bottom: 120px;
+}
+
+
+
+/* -------------選單列的子選單----------------- */
+
+.items li+.list ol{
+    display: block;
+    position: static;
+    background-color:#f5f9f4 ;
+    padding: 0 20px;
+    border-top: 1px solid #b1cea7;
+}
+
+.items li+.list>ol li{
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: left;
+    border-bottom: 1px solid #b1cea7;
+
+}
+
+.items li+.list>ol li:nth-child(3){
+    border-bottom:1px solid #b1cea7;
+}
+
+.items li+.list>ol a{
+    line-height: 40px;
+}
+
+/* ---------------------點擊時顯示子選單-----------------*/
+.list.active ol {
+    display: block; 
+    }
+
+
+/* --------------------登入列隱藏----------------- */
+.icon{
+    display: none;
+}
+
+/* --------------------電腦版首圖banner----------------- */
+.top{
+    display: none;
+}
+
+main{
+    height: 1920px;
+}
+
+/* --------------------手機版banner-------------------- */
+.top-phone{
+    display: block;
+}
+
+.phone-slide img{
+    background-size: cover;
+}
+
+/* ------------------中間圖片卡片代寫------------------ */
+.middle{
+    flex-direction: column;
+    height: 680px;
+}
+
+.left img{
+    height: 330px;
+    display: block;
+    margin: 30px auto;
+}
+
+.left h2{
+    left: -62px;
+}
+
+.left .ball{
+    bottom: 30px;
+    height: 60px;
+}
+
+/* -----------------------卡片代寫------------------ */
+
+.right img{
+    width: 330px;
+    margin: 0 auto;
+}
+
+/* -----------------頁尾------------------------- */
+footer{
+    height: 200px;
+}
+
+.bottom{
+    width: auto;
+    height: 170px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.block h1{
+    width: auto;
+    font-size: 66px;
+}
+
+.bottom img{
+    width: 60vw;
+}
+
+.bottom ul{
+    width: 80vw;
+}
+
+.bottom a{
+    font-size: 14px;
+}
+
+.bottom p{
+    width: 80vw;
+    font-size: 10px;
+    margin: 16px auto 0;
+}
+
+}

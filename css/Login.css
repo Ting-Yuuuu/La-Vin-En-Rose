@@ -144,7 +144,7 @@ main {
     border: 5px solid #B1CEA7;
     width: 452px;
     height: 460px;
-    border-radius: 50% 50% 0 0;
+    border-radius: 300px 300px 0 0;
     margin: 0 auto;
     margin-top: 150px;
 }
@@ -154,7 +154,7 @@ main {
     height: 444px;
     border: 2px solid #B1CEA7;
     background-color: #fff;
-    border-radius: 50% 50% 0 0;
+    border-radius: 300px 300px 0 0;
     margin: 5px 8px;
 }
 
