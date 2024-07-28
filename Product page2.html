@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品頁</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Product page-style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="RWD/Product page-RWD.css">
+</head>
+
+<body>
+
+    <!----------------------------頁首選單------------------------------------------------------------->
+    <header>
+        <a href="index.html"><img src="image/logo .png" alt="Logo" class="logo"></a>
+        <img src="image/icon-hamburger.svg" alt="" class="hamburger">
+       
+        <ul class="items">
+            <ul class="login">
+                <li><a href="Login.html">會員登入</a></li>
+                <li><a href="Signup.html">註冊會員</a></li>
+            </ul>  
+            <li><a href="All.html">所有商品</a></li>
+            <li class="list"><a href="">主題分類</a>
+                <ol>
+                    <li><a href="Valentine.html">情人節花禮</a></li>
+                    <li><a href="Graduation.html">畢業花禮</a></li>
+                    <li><a href="Wedding.html">婚禮花禮</a></li>
+                </ol>
+            </li>
+            <li><a href="Freshflowers.html">鮮花</a></li>
+            <li><a href="Preserved Flower.html">永生花</a></li>
+            <li><a href="Brand Concept.html">品牌理念</a></li>
+        </ul>
+
+        <ul class="icon">
+            <li><a href=""><img src="image/icon search.svg" alt=""></a></li>
+            <li><a href="Login.html"><img src="image/icon-login.svg" alt=""></a></li>
+            <li><a href=""><img src="image/icon-shopping car.svg" alt=""></a></li>
+        </ul>
+    </header>
+    <main>
+        <!-----------------商品圖和介紹說明-------------------------->
+        <div class="top">
+            <!--------------商品圖-------------------------->
+            <div class="pic">
+                
+                <div class="swiper">
+                     <!-- swiper class 會被 new Swiper('.swiper' 使用 -->
+                    <div class="swiper-wrapper"> <!-- 讓Swiper知道要輪播的內容位置必須為 swiper-wrapper -->
+                        <div class="swiper-slide">
+                            <img src="image/Product page2-pic1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/Product page2-pic2.jpg" alt="">
+                        </div>
+                    </div>
+            
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <script>
+                // const swiper = new Swiper('.swiper', { // 創建一個輪播
+                //     autoplay: { // 自動輪播 swiper
+                //         delay: 4 * 1000, // 每兩秒切換下一張
+                //     },
+                //     loop: true, // 輪播結束後回到第一張繼續輪播
+                //     navigation: { // 前一張、下一張按鈕
+                //         nextEl: '.swiper-button-next',
+                //         prevEl: '.swiper-button-prev',
+                //     },
+                // });
+            </script>
+
+            <!------------產品名稱價格----------------------------->
+            <div class="information">
+                <!-------------麵包屑----------------------------->
+                <div class="bread">
+                    <a href="Freshflowers.html">鮮花<img src="image/icon-right.svg" alt=""></a>
+                    <a href="Valentine.html">鮮花花束</a>
+                </div>
+                <h1>繽紛夏日鬱金香花束</h1>
+                <h2>附花藝提袋</h2>
+
+                <div class="event">
+                    <h3>購買卡片可加購手寫卡片服務<br>
+                        7/30前完成下單即享8折優惠</h3>
+                </div>
+                <div class="remark">
+                    <img src="image/icon-flower gray.svg" alt="flower-icon">
+                    <h4>卡片內容請在訂單備註中填寫</h4>
+                </div>
+                <h5>$ 1,650</h5>
+
+                <p>數量</p>
+
+                <div class="quantity">
+
+                    <div class="minus">
+                        <p> - </p>
+                    </div>
+
+                    <input type="number" value="1" min="1" step="1" required class="number">
+
+                    <div class="plus">
+                        <p> + </p>
+                    </div>
+                </div>
+
+                <div class="shopping">
+                    <div class="button1">
+                        <a href="">加入購物車</a>
+                    </div>
+                    <div class="button2">
+                        <a href="">立即購買</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------加購商品----------------------------->
+        <div class="add">
+            <!-------------標題---------------->
+            <div class="title">
+                <p>加購專區</p>
+            </div>
+            <!-----------列表------------------>
+            <div class="project">
+                <div class="list1">
+                    <img src="image/product-card.jpg" alt="">
+
+                    <div class="text">
+                        <h3>加購心意小卡</h3>
+                        <p>$ 30</p>
+
+                        <div class="middle">
+                            <div class="min">
+                                <p> - </p>
+                            </div>
+                            <input type="number" value="1" min="1" step="1" required class="frame">
+                            <div class="pls">
+                                <p> + </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="list1">
+                    <img src="image/product-writing.jpg" alt="">
+
+                    <div class="text">
+                        <h3>加購卡片代寫</h3>
+                        <p>$ 40</p>
+
+                        <div class="middle">
+                            <div class="min">
+                                <p> - </p>
+                            </div>
+                            <input type="number" value="1" min="1" step="1" required class="frame">
+                            <div class="pls">
+                                <p> + </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="list1">
+                    <img src="image/product-bag.jpg" alt="">
+
+                    <div class="text">
+                        <h3>加購花藝提袋</h3>
+                        <p>$ 40</p>
+
+                        <div class="middle">
+                            <div class="min">
+                                <p> - </p>
+                            </div>
+                            <input type="number" value="1" min="1" step="1" required class="frame">
+                            <div class="pls">
+                                <p> + </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------注意事項-------------------------------------->
+        <div class="notice">
+            <h3>｜注意事項｜</h3>
+            <p>鮮花會因季節性或其他不可抗因素導致缺貨無法供應。<br>
+                因此照片僅供參考花材色系、整體風格及尺寸，如遇花材短缺，將以當季花材或類似款式替代，不另行通知。<br>
+                花禮皆無法與照片一模一樣，每一朵鮮花的顏色深淺、花形大小、彎曲程度、長度皆有所不同，將以實際情況為主。</p>
+        </div>
+
+        <div class="more-pic">
+            <img src="image/Product page2-pic1.jpg" alt="">
+            <img src="image/Product page2-pic2.jpg" alt="">
+        </div>
+
+        <!----------------------------相關產品-------------------------------------->
+
+        <!-----------------標題---------------------->
+        <div class="title">
+            <p>相關產品</p>
+        </div>
+        <!-----------------列表--------------------->
+        <div class="similar">
+            <ul>
+                <li><a href="">
+                        <div class="photo"><img src="image/Valentine fresh 5.jpg" alt=""></div>
+                        <h3>11朵進口白玫瑰花束</h3>
+                        <p>$ 2,080</p>
+                    </a></li>
+
+                <li><a href="">
+                        <div class="photo"><img src="image/Valentine fresh 6.jpg" alt=""></div>
+                        <h3>焦糖卡布奇諾玫瑰花束</h3>
+                        <p>$ 2,500</p>
+                    </a></li>
+
+                <li><a href="">
+                        <div class="photo"><img src="image/Valentine fresh 7.jpg" alt=""></div>
+                        <h3>春日繽紛綜合花束</h3>
+                        <p>$ 2,000</p>
+                    </a></li>
+
+                <li><a href="">
+                        <div class="photo"><img src="image/Valentine fresh 8.jpg" alt=""></div>
+                        <h3>三朵蘋果玫瑰花束</h3>
+                        <p>$ 1,000</p>
+                    </a></li>
+            </ul>
+        </div>
+    </main>
+    <!----------------------------------頁尾------------------------------------------>
+    <footer>
+        <div class="bottom">
+            <a href="index.html"><img src="image/logo .png" alt=""></a>
+            <ul>
+                <li><a href="All.html">所有商品</a></li>
+                <li><a href="index.html">主題分類</a></li>
+                <li><a href="Freshflowers.html">鮮花</a></li>
+                <li><a href="Preserved Flower.html">永生花</a></li>
+                <li><a href="Brand Concept.html">品牌理念</a></li>
+            </ul>
+            <p>本網站為緯育TibaMe第93期前端工程師專業技術養成班學員專題作品，
+                本平台僅供學習、展示之用途若有侵權疑慮，您可以私訊緯育 TibaMe，後續會由專人協助處理。
+                參考資源: 花譜花藝、芙拉花藝、朵緹花藝、花糜、花時、Morning cat、白色花藝、敘思花藝。以致敬所有我喜愛的花藝店。</p>
+        </div>
+    </footer>
+
+    <script>
+    // 主要商品加減按鈕
+        $(document).ready(function(){
+            $('.plus').on('click',function(){
+                let val = parseInt($(this).siblings('input.number').val());
+                $(this).siblings('input.number').val(val+1);
+            });
+        });
+
+        $('.minus').on('click',function(){
+            let val = parseInt($(this).siblings('input.number').val());
+            if(val>1){
+                $(this).siblings('input.number').val(val-1);
+            }
+        });
+
+
+          //當螢幕小於820時，點擊主題分類顯示子選單
+          $(document).ready(function() {
+                // 點擊主題分類顯示子選單
+                $('.list > a').click(function(event) {
+                event.preventDefault(); // 防止預設的點擊行為
+                $(this).parent().toggleClass('active');
+                event.stopPropagation(); // 防止點擊事件傳播
+                });
+
+                // 點擊頁面其他區域隱藏子選單
+                $(document).click(function(event) {
+                if (!$(event.target).closest('.list').length) {
+                    $('.list').removeClass('active');
+                }
+                });
+            });
+
+
+            // 當螢幕小於430時，點擊漢堡線選單出現
+            $(document).ready(function(){
+                $('.hamburger').click(function(event){
+                    event.stopPropagation(); // 阻止事件冒泡，以防止事件觸發 document 的點擊事件
+                    $('.items').toggleClass('active');
+                });
+        
+                // 當點擊文檔的任何地方
+                $(document).click(function(event){
+                    if (!$(event.target).closest('.items').length && !$(event.target).is('.hamburger')) {
+                        $('.items').removeClass('active');
+                    }
+                });
+            });
+
+    </script>
+
+</body>
+
+</html>

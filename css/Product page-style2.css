@@ -1,0 +1,685 @@
+@import url(css/reset.css);
+
+
+body {
+    font-family: "Carattere", "Noto Sans TC";
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -----------------頁首選單區--------------------------------- */
+/* -----------------選單選項-------------------------------- */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #D3E4CD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+/* --------------漢堡線(隱藏)------------------- */
+
+header .hamburger{
+    display: none;
+    width: 40px;
+}
+
+/* -----------選單中的登入列(隱藏)------------ */
+
+header .items>.login{
+    display: flex;
+    display: none;
+}
+
+header .items>.login a{
+    color: #649255;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
+header ul {
+    display: flex;
+    display: block;
+}
+
+
+header img {
+    width: 25vw;
+    flex-shrink: 0;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.items {
+    display: flex;
+    gap: 4vw;
+}
+
+.items li {}
+
+
+.items a {
+    text-decoration: none;
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.items a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+/* ---------------------子選單-------------------- */
+.items li+.list ol {
+    position: absolute;
+    display: block;
+    background-color: #e9f2e6;
+    display: none;
+    padding: 0 20px;
+}
+
+.items li+.list>ol li {
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #649255;
+}
+
+.items li+.list>ol li:nth-child(3){
+    border-bottom: none;
+}
+
+.items li+.list>ol a {
+    line-height: 60px;
+}
+
+
+.items>li+.list:hover ol {
+    display: block;
+}
+
+/* ----------------------搜尋 會員登入---------------------------- */
+
+.icon {
+    display: flex;
+    margin-right: 20px;
+}
+
+.icon li {}
+
+.icon a {}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+
+/* -----------------內容區-------------------------------- */
+main {
+    background-image: url(../image/product-bg.png);
+    height: 2230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+/* ---------------產品圖和說明-----------------------*/
+.top {
+    margin-top: 100px;
+    display: flex;
+}
+
+/* -------------商品圖------------------------- */
+
+.pic{
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+.swiper {
+    width: 360px;
+    border-radius: 300px 300px 0 0 ;
+    border: 10px solid #FCF7EC;
+    overflow: hidden;
+    height: 480px;
+}
+
+.swiper-slide{
+    width: 360px;
+}
+
+.swiper-slide img{
+    width: 360px;
+}
+
+.swiper-button-prev:after,.swiper-button-next:after{
+    color:#ffffff;
+}
+
+/* ----------產品名稱價格------------------ */
+.information {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+
+/* ------------麵包屑------------------ */
+.bread {}
+
+.bread a {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.bread a:hover {
+    font-weight: 600;
+}
+
+
+.bread img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+}
+
+/* -------------標題內容---------------------- */
+.information h1 {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.information h2 {
+    color: #838383;
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.event {
+    margin-top: 16px;
+    border-left: 5px solid #D3E4CD;
+}
+
+.event h3 {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    margin-left: 4px;
+    line-height: 1.5;
+}
+
+.remark {
+    margin-top: 12px;
+}
+
+.remark img {
+    float: left;
+    width: 12px;
+    margin-right: 4px;
+}
+
+.remark h4 {
+    color: #838383;
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+}
+
+.information h5 {
+    color: #649255;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.information h5+p {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.quantity {
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.minus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #838383;
+    cursor: pointer;
+    user-select: none;
+}
+
+.minus p {
+    color: #838383;
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.minus p:hover{
+    background-color: #E9F2E6;
+    color: #649255;
+    font-weight: bold;
+}
+
+.number {
+    width: 240px;
+    height: 28px;
+    border: 1px solid #838383;
+    color: #838383;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    text-align: center;
+}
+
+.number::-webkit-inner-spin-button,
+.number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number:focus {
+    outline: none;
+}
+
+
+
+.plus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #838383;
+    cursor: pointer;
+    user-select: none;
+}
+
+.plus p:hover{
+    background-color: #E9F2E6;
+    color: #649255;
+    font-weight: bold;
+}
+
+
+.plus p {
+    color: #838383;
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.shopping {
+    display: flex;
+    margin-top: 56px;
+    gap: 60px;
+}
+
+.button1 {}
+
+
+.button1 a {
+    display: block;
+    width: 126px;
+    height: 30px;
+    padding: 10px 0px;
+    border-radius: 40px;
+    background: #D3E4CD;
+    text-align: center;
+    text-decoration: none;
+    color: #4F7742;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+}
+
+.button2 {}
+
+
+.button2>a {
+    text-decoration: none;
+    display: block;
+    width: 126px;
+    height: 30px;
+    padding: 10px 0px;
+    border-radius: 40px;
+    background: #D3E4CD;
+    text-align: center;
+    text-decoration: none;
+    color: #4F7742;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.button2 a:hover {
+    color: #b1cea7;
+    border: 1px solid #b1cea7;
+    background-color: #fff;
+}
+
+
+.button1 a:hover {
+    color: #b1cea7;
+    border: 1px solid #b1cea7;
+    background-color: #fff;
+}
+
+/* --------------------加購專區----------------- */
+.add {
+    margin-top: 60px;
+}
+
+.title {
+    height: 32px;
+    width: 120px;
+    border-bottom: 2px solid #649255;
+    text-align: center;
+    margin-left: 52px;
+    margin-bottom: 16px;
+}
+
+.title p {
+    color: #649255;
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.add .project {
+    width: 87.5vw;
+    gap: 20px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.list1 {
+    display: flex;
+    width: 360px;
+    height: 152px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #649255;
+    padding-top: 16px;
+    padding-left: 20px;
+}
+
+.list1 img {
+    width: 136px;
+    height: 136px;
+    border-radius: 20px;
+}
+
+.list1 .text {
+    margin-left: 16px;
+}
+
+.list1 .text h3 {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.list1 .text>p {
+    color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.middle {
+    display: flex;
+    background-color: #fff;
+    margin-top: 12px;
+}
+
+.middle .min {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #838383;
+    cursor: pointer;
+}
+
+.middle .min>p {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.middle .frame {
+    width: 68px;
+    height: 22px;
+    border: 1px solid #838383;
+    color: #838383;
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 22px;
+}
+
+.frame::-webkit-outer-spin-button,
+.frame::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.frame {
+    outline: none;
+}
+
+.middle .pls {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #838383;
+    cursor: pointer;
+}
+
+.middle .pls>p {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* ------------------注意事項----------------- */
+.notice {
+    width: 80vw;
+    margin-top: 80px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+.notice h3 {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.notice p {
+    color: #606060;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+/* ------------------大圖商品照------------------------ */
+.more-pic{
+    text-align: center;
+}
+
+.more-pic img{
+    display: inline-block;
+    height: 500px;
+    border-radius: 20px;
+    margin: 0 30px 80px;
+}
+
+/* ------------------相關產品---------------------- */
+.similar {
+    width: 94vw;
+    margin: 0 auto;
+    font-size: 0;
+    margin-top: 30px;
+}
+
+
+
+.similar ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.similar li {}
+
+.similar .photo {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.similar img {
+    width: 282px;
+    height: 282px;
+    border-radius: 20px;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+
+}
+
+.similar img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.similar h3 {
+    color: #313131;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.similar h3:hover {
+    color: #649255;
+    font-weight: 600;
+}
+
+.similar p {
+    color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+
+.similar p:hover {
+    color: #649255;
+    font-weight: 700;
+}
+
+.similar a {
+    text-decoration: none;
+}
+
+/* --------------頁尾------------------- */
+footer {
+    width: 100%;
+    height: 280px;
+    background-color: #D3E4CD;
+}
+
+.bottom {
+    width: 62vw;
+    height: 210px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+.bottom ul {
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.bottom li {}
+
+.bottom a {
+    color: #606060;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    font-weight: 600;
+    color: #649255;
+}
+
+.bottom img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.bottom p {
+    font-family: "Noto Sans TC";
+    color: #606060;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 1.5;
+}

@@ -1,6 +1,6 @@
-/* -------------------當螢幕小於820時-------------------- */
+/* --------------當螢幕小於820時------------------- */
 @media screen and (max-width:820px){
-/* ---------------頁首選單區---------------------------- */
+/* ------------------頁首選單區-------------------- */
 header{
     height: 60px;
 }
@@ -14,55 +14,116 @@ header img{
     gap: 28px;
 }
 
-.items li{
-    height: 60px;
-}
-
 .items a{
     font-size: 16px;
-    line-height: 60px;
 }
-
 
 /* ---------------------子選單---------------------- */
-.items li+.list ol{
+.items li+.list ol {
+    position: absolute;
     display: block;
-    position: static;
-    background-color:#f5f9f4 ;
-    padding: 0 20px;
-    border-top: 1px solid #b1cea7;
+    background-color: #e9f2e6;
+    display: none;
+    top: 60px;
+    position: fixed;
+    padding: 0 10px;
 }
 
-.items li+.list>ol li{
-    height: 40px;
-    width: 100%;
-    line-height: 40px;
-    text-align: left;
-    border-bottom: 1px solid #b1cea7;
-
+.items li+.list>ol li {
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #649255;
 }
 
-.items li+.list>ol li:nth-child(3){
-    border-bottom:1px solid #b1cea7;
-}
-
-.items li+.list>ol a{
-    line-height: 40px;
+.items li+.list>ol a {
+    line-height: 50px;
 }
 
 
 /* ---------------------點擊時顯示子選單-----------------*/
 .list.active ol {
     display: block; 
-  }
+    }
 
-/* -------------------首圖區塊-------------------------------- */
-.banner{
+/* -------------------內容區--------------------------- */
+.top{
     margin-top: 60px;
 }
+/* ------------------永生花介紹------------------------- */
+/* --------------------左邊圖片------------------------ */
+.photo{
+    margin-left: 40px;
+}
+
+.photo img{
+    height: 300px;
+}
+
+
+/*-----------------------右邊文字------------------------ */
+.explain{
+    margin-left: 32px;
+    padding-right: 20px;
+    height: 400px;
+}
+
+
+.explain h1{
+    font-size: 66px;
+}
+
+.explain p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.explain h2{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* -------------------花束租借--------------------------- */
+.bouquet{
+    height: 468px;
+}
+/* -----------------左邊花束租借說明文字------------------- */
+
+.lease{
+    margin-left: 6px;
+}
+
+.lease ul{
+    padding-left: 10px;
+}
+
+.lease li p{
+    font-size: 16px;
+    line-height: 2;
+}
+
+.lease li h4{
+    font-size: 26px;
+}
+
+/* -------------------圖片幻燈片-------------------------- */
+.picture-slideshow{
+    margin-left: 0;
+}
+
+
+
+.picture-slideshow .slide img{
+    height: 300px;
+    margin-top: 110px;
+}
+
+
 /* -----------------熱門排名----------------- */
 .ranking{
-    height: 360px;
+    height: 400px;
 }
 /* ------------------標題--------------------------- */
 .ranking h2{
@@ -75,7 +136,7 @@ header img{
     width: 160px;
 }
 
-.ranking .mainpic{
+.ranking .text img{
     width: 160px;
     height: 160px;
 }
@@ -92,53 +153,15 @@ header img{
     font-size: 14px;
 }
 
-/* --------------------鮮花小教室--------------------------- */
-.flowerclass{
-    height: 420px;
-}
-
-/* --------------------左邊文字區域-------------------------- */
-/* ------------------鮮花小教室標題-------------------------- */
-.flowerclass h1{
-    line-height: 36px;
-    width: 46px;
-    height: 232px;
-    font-size: 22px;
-    margin-left: 40px;
-}
-
-/* --------------------鮮花介紹--------------------------- */
-/* ----------內文-------------- */
-.word {
-    margin-left: 30px;
-}
-
-.word h2{
-    font-size: 56px;
-}
-
-.word p{
-    font-size: 16px;
-    line-height: 30px;
-}
-
-/* -------------------右邊圖片----------------------------- */
-.flowerclass img{
-    width: 180px;
-    height: 184px;
-    margin-top: 142px
-}
-
-/* ------------------商品區-------------------------------- */
-main{
-}
-/* ---------------------花束標題---------------------------- */
+/* --------------------商品區----------------------------- */
+/* --------------------花束------------------------------ */
 .title{
     width: 90vw;
     margin: 0 auto;
 }
 
-.title li{
+.title ul{
+    width: 90vw;
     font-size: 64px;
 }
 
@@ -147,37 +170,37 @@ main{
 }
 
 /* ---------------------商品列----------------------------- */
-.bouquet{
+.preserved{
     width: 90vw;
 }
-.bouquet ul{
+.preserved ul{
     width: 90vw;
     justify-content:none;
 }
 
-.bouquet a{
+.preserved a{
     width: 160px;
     height: 160px;
 }
 
-.bouquet .pic{
+.preserved .pic{
     width: 160px;
     height: 160px;
 }
 
-.bouquet img{
+.preserved img{
     width: 160px;
     height: 160px;
 }
 
-.bouquet h3{
+.preserved h3{
     overflow-wrap: break-word;
     width: 160px;
     font-size: 16px;
     line-height: 1.2;
 }
 
-.bouquet p{
+.preserved p{
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -237,7 +260,6 @@ main{
     width: auto;
     padding: 28px 90px 0;
 }
-
 }
 
 /* ---------------------當螢幕小於430時------------------------ */
@@ -321,7 +343,7 @@ header .items>li:nth-child(3){
 
 /* -------------選單列的子選單----------------- */
 
-.items li>ol{
+.items li+.list ol{
     display: block;
     position: static;
     background-color:#f5f9f4 ;
@@ -329,85 +351,114 @@ header .items>li:nth-child(3){
     border-top: 1px solid #b1cea7;
 }
 
-.items li>ol li{
+.items li+.list>ol li{
     height: 40px;
     width: 100%;
     line-height: 40px;
     text-align: left;
     border-bottom: 1px solid #b1cea7;
+
 }
 
-.items li>ol a{
+.items li+.list>ol li:nth-child(3){
+    border-bottom:1px solid #b1cea7;
+}
+
+.items li+.list>ol a{
     line-height: 40px;
 }
+
+
+/* ---------------------點擊時顯示子選單-----------------*/
+.list.active ol {
+    display: block; 
+  }
 
 /* --------------------登入列隱藏----------------- */
 .icon{
     display: none;
 }
 
-/* -------------------熱門排行數字圖片和文字-------------- */
-.ranking {
-    height: 800px;
+/* ---------------------內容區-------------------------- */
+.top{
+    height: 1930px;
+}
+/* ---------------------永生花介紹----------------------- */
+.introduce{
+    flex-direction: column;
 }
 
-.ranking-frame {
+.photo{
+   margin: 0 auto;
+}
+
+.photo img{
+    height: 360px;
+}
+
+/* ---------------------說明文字------------------------- */
+.explain{
+    margin: 0px auto 100px;
+    padding: 0 30px;
+}
+
+.explain h1{
+    font-size: 60px;
+}
+
+/* --------------------花束租借說明文字-------------------- */
+.bouquet{
     flex-direction: column;
+    height: 940px;
+}
+
+.lease{
+    padding-top: 70px;
+}
+
+
+.lease .slogan h3{
+    font-size: 24px;
+    margin: 0px auto 30px;
+    text-align: center;
+}
+/* --------------------圖片幻燈片------------------------ */
+.slide{
+ 
+}
+.picture-slideshow{
+ 
+}
+
+.picture-slideshow .slide img{
+    margin: 0;
+    margin-left: 25vw;
+}
+
+
+
+
+
+
+
+
+/* -------------------熱門排行數字圖片和文字-------------- */
+.ranking {
+    height: 920px;
 }
 
 .ranking .item1{
     margin: 20px auto 0 25%;
+    flex-direction: column;
 }
 
-.ranking .item1:first-child{
-    margin-top: 20px;
-}
-
-.ranking .item1:nth-child(2),.ranking .item1:nth-child(3){
+.ranking>.item1:nth-child(3),.ranking>.item1:nth-child(4){
     margin-top: 200px;
 }
 
-/* ---------------------鮮花小教室----------------------- */
-/* -----------------鮮花小教室標題------------------------ */
-.flowerclass h1{
-    line-height: 18px;
-    width: 30px;
-    height: 212px;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-top: 130px;
-}
-/* ----------------鮮花說明文字--------------------------- */
-.word {
-    margin-left: 10px;
-    padding-right: 10px;
-    margin-top: 100px;
-}
-.word h2{
-    font-size: 56px;
-}
-
-.word p{
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* ------------------------圖片----------------------------- */
-.flowerclass img{
-    display: none;
-}
-
-/* -----------------商品內容區--------------------------- */
+/* ------------------商品區------------------------------- */
 main{
-    height: 1340px;
-}
-
-.title li{
-    font-size: 54px;
-}
-
-.title-pot li{
-    font-size: 54px;
+    height: 1370px;
 }
 
 /* -----------------頁尾------------------------- */
@@ -446,14 +497,3 @@ footer{
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-

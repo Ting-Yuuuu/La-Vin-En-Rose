@@ -22,6 +22,29 @@ header {
     left: 0;
 }
 
+/* --------------漢堡線(隱藏)------------------- */
+
+header .hamburger{
+    display: none;
+    width: 40px;
+}
+
+/* -----------選單中的登入列(隱藏)------------ */
+
+header .items>.login{
+    display: flex;
+    display: none;
+}
+
+header .items>.login a{
+    color: #649255;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
 header ul {
     display: flex;
     display: block;
@@ -29,7 +52,7 @@ header ul {
 
 
 header img {
-    width: 300px;
+    width: 25vw;
     flex-shrink: 0;
     line-height: 100px;
     margin-left: 20px;
@@ -37,7 +60,7 @@ header img {
 
 .items {
     display: flex;
-    gap: 68px;
+    gap: 4vw;
     position: relative;
 }
 
@@ -61,27 +84,32 @@ header img {
 }
 
 /* ---------------------子選單-------------------- */
-.items li>ol {
+.items li+.list ol {
     position: absolute;
     display: block;
-    background-color: #d3e4cdb3;
+    background-color: #e9f2e6;
     display: none;
+    padding: 0 20px;
 }
 
-.items li>ol li {
-    width: 160px;
+.items li+.list>ol li {
+    width: 120px;
     height: 60px;
     text-align: center;
     line-height: 60px;
     border-bottom: 1px solid #649255;
 }
 
-.items li>ol a {
+.items li+.list>ol li:nth-child(3){
+    border-bottom: none;
+}
+
+.items li+.list>ol a {
     line-height: 60px;
 }
 
 
-.items li:nth-child(2):hover ol {
+.items>li+.list:hover ol {
     display: block;
 }
 
@@ -305,7 +333,7 @@ header img {
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid #FE9C39;
-    margin-left: 64px;
+    margin-left: 5vw;
     user-select: none;
 }
 
@@ -317,9 +345,9 @@ header img {
 .ranking .item1 {
     display: flex;
     position: relative;
-    width: 380px;
+    width: 29vw;
     float: left;
-    margin: 30px auto 0 28px;
+    margin: 2.5vw auto 0 28px;
 }
 
 .ranking .item1 .number {
@@ -327,7 +355,7 @@ header img {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #FFC172;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 210px;
+    font-size: 16.5vw;
     font-weight: 600;
     width: 160px;
     user-select: none;
@@ -335,8 +363,8 @@ header img {
 
 .ranking .text {
     position: absolute;
-    top: 80px;
-    left: 100px;
+    top: 6.5vw;
+    left: 8vw;
 }
 
 .ranking .text a {
@@ -400,7 +428,9 @@ main {
 }
 
 /* -----------花束標題---------------- */
-.title {}
+.title {
+    width: 94%;
+}
 
 .title ul {
     width: 1188px;
@@ -440,7 +470,7 @@ main {
 /* ----------花束商品列------------- */
 .preserved {
     font-size: 0;
-    width: 1188px;
+    width: 94vw;
     margin: 0 auto;
 }
 
@@ -484,6 +514,7 @@ main {
     font-size: 20px;
     font-weight: 600;
     margin-top: 12px;
+    width: 282px;
 }
 
 .preserved h3:hover {
@@ -507,7 +538,9 @@ main {
 
 
 /* -----------盆花標題--------------- */
-.title-pot {}
+.title-pot {
+    width: 94%;
+}
 
 .title-pot ul {
     width: 1188px;
@@ -543,7 +576,7 @@ main {
 /* ------------盆花商品列-------------- */
 .pottedflowers {
     font-size: 0;
-    width: 1188px;
+    width: 94%;
     margin: 0 auto;
 }
 
@@ -585,6 +618,7 @@ main {
     font-size: 20px;
     font-weight: 600;
     margin-top: 12px;
+    width: 282px;
 }
 
 .pottedflowers h3:hover {
@@ -614,7 +648,7 @@ footer {
 }
 
 .bottom {
-    width: 792px;
+    width: 62vw;
     height: 210px;
     margin: 0 auto;
     padding: 28px;
@@ -622,7 +656,7 @@ footer {
 
 .bottom ul {
     display: flex;
-    width: 570px;
+    width: 45vw;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 8px;

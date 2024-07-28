@@ -275,7 +275,7 @@ footer {
 }
 
 .bottom {
-    width: 792px;
+    width: 62vw;
     height: 210px;
     margin: 0 auto;
     padding: 28px;
@@ -283,7 +283,7 @@ footer {
 
 .bottom ul {
     display: flex;
-    width: 570px;
+    width: 45vw;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 8px;
