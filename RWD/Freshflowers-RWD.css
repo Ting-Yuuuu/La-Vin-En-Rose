@@ -317,7 +317,7 @@ header .items>li:nth-child(3){
 
 /* -------------選單列的子選單----------------- */
 
-.items li>ol{
+.items li+.list ol{
     display: block;
     position: static;
     background-color:#f5f9f4 ;
@@ -325,17 +325,28 @@ header .items>li:nth-child(3){
     border-top: 1px solid #b1cea7;
 }
 
-.items li>ol li{
+.items li+.list>ol li{
     height: 40px;
     width: 100%;
     line-height: 40px;
     text-align: left;
     border-bottom: 1px solid #b1cea7;
+
 }
 
-.items li>ol a{
+.items li+.list>ol li:nth-child(3){
+    border-bottom:1px solid #b1cea7;
+}
+
+.items li+.list>ol a{
     line-height: 40px;
 }
+
+/* ---------------------點擊時顯示子選單-----------------*/
+.list.active ol {
+    display: block; 
+  }
+
 
 /* --------------------登入列隱藏----------------- */
 .icon{
