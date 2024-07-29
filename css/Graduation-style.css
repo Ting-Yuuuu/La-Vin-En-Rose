@@ -63,7 +63,6 @@ header img {
     gap: 4vw;
 }
 
-.items li {}
 
 
 .items a {
@@ -117,9 +116,7 @@ header img {
     margin-right: 20px;
 }
 
-.icon li {}
 
-.icon a {}
 
 .icon img {
     width: 24px;
@@ -179,7 +176,6 @@ header img {
     margin-top: 36px;
 }
 
-.left img {}
 
 .left ul {
     display: flex;
@@ -244,7 +240,6 @@ header img {
     display: flex;
 }
 
-.block img {}
 
 .block ul {
     display: flex;
@@ -329,7 +324,6 @@ main {
 }
 
 /* --------------鮮花/永生標題----------------------- */
-.fresh {}
 
 .fresh .title {
     border-bottom: 2px solid #649255;
@@ -382,7 +376,7 @@ main {
     flex-wrap: wrap;
 }
 
-.fresh li {}
+
 
 .fresh a {
     text-decoration: none;
@@ -436,7 +430,7 @@ main {
 }
 
 /* --------------永生/乾燥花---------------- */
-.dry {}
+
 
 /* -------------永生/乾燥標題--------------- */
 .dry .title {
@@ -491,7 +485,7 @@ main {
     flex-wrap: wrap;
 }
 
-.dry li {}
+
 
 .dry a {
     text-decoration: none;
@@ -566,7 +560,7 @@ footer {
     margin-top: 8px;
 }
 
-.bottom li {}
+
 
 .bottom a {
     color: #606060;

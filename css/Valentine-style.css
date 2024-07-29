@@ -63,7 +63,7 @@ header img {
     gap: 4vw;
 }
 
-.items li {}
+
 
 
 .items a {
@@ -117,9 +117,9 @@ header img {
     margin-right: 20px;
 }
 
-.icon li {}
 
-.icon a {}
+
+
 
 .icon img {
     width: 24px;
@@ -142,9 +142,7 @@ header img {
 }
 
 /* ----------中間banner區------------------- */
-.swiper {
- 
-}
+
 .swiper-slide {
     text-align: center;
     display: flex;
@@ -337,7 +335,7 @@ main {
     justify-content: space-between;
 }
 
-.bouquet li {}
+
 
 .bouquet a {
     text-decoration: none;
@@ -404,7 +402,7 @@ main {
     justify-content: space-between;
 }
 
-.dry li {}
+
 
 .dry a {
     text-decoration: none;
@@ -478,7 +476,7 @@ footer {
     margin-top: 8px;
 }
 
-.bottom li {}
+
 
 .bottom a {
     color: #606060;

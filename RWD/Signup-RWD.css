@@ -47,6 +47,15 @@ header img{
     display: block; 
     }
 
+main{
+    height: 1030px;
+}
+
+.frame{
+    margin-bottom: 206px;
+}
+
+
 /* --------------------頁尾---------------------- */
 .bottom{
     width: auto;

@@ -50,7 +50,7 @@ header img{
 /* -----------------中間內容區------------------- */
 main{
     background-size: cover;
-    height: calc(100vh - 340px);
+    height: calc(100vh - 280px);
 }
 
 /* --------------------頁尾---------------------- */
